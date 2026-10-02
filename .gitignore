@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.vscode/
+.idea/
+.DS_Store
+
+# Generated data
+data/raw/
+data/processed/
+
+# ML / vector database files
+models/*.h5
+models/*.keras
+models/*.pkl
+models/*.joblib
+rag/vector_store/
+
+# Logs
+*.log
