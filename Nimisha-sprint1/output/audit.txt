@@ -1,0 +1,484 @@
+"Nimisha-sprint1\audit_dataset.py"
+Traceback (most recent call last):
+  File "D:\Desktop\adhikar-setu\Nimisha-sprint1\audit_dataset.py", line 5, in <module>
+    df = pd.read_excel(FILE_PATH)
+  File "D:\Desktop\adhikar-setu\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 481, in read_excel
+    io = ExcelFile(
+        io,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "D:\Desktop\adhikar-setu\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1604, in __init__
+    ext = inspect_excel_format(
+        content_or_path=path_or_buffer, storage_options=storage_options
+    )
+  File "D:\Desktop\adhikar-setu\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1452, in inspect_excel_format
+    with get_handle(
+         ~~~~~~~~~~^
+        content_or_path, "rb", storage_options=storage_options, is_text=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handle:
+    ^
+  File "D:\Desktop\adhikar-setu\.venv\Lib\site-packages\pandas\io\common.py", line 939, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'data/raw/schemes.xlsx'
+(.venv) PS D:\Desktop\adhikar-setu> Get-ChildItem -Path "D:\Desktop\adhikar-setu" -Recurse -File | Where-Object {$_.Extension -in ".xlsx",".xls",".csv"}
+
+
+    Directory: D:\Desktop\adhikar-setu\.venv\Lib\site-packages\numpy\random\tests\data
+
+
+Mode                 LastWriteTime         Length Name                                                                                     
+----                 -------------         ------ ----                                                                                     
+-a----        03-10-2026     13:38          16845 mt19937-testset-1.csv                                                                    
+-a----        03-10-2026     13:38          16826 mt19937-testset-2.csv                                                                    
+-a----        03-10-2026     13:38          24840 pcg64-testset-1.csv                                                                      
+-a----        03-10-2026     13:38          24846 pcg64-testset-2.csv                                                                      
+-a----        03-10-2026     13:38          24834 pcg64dxsm-testset-1.csv                                                                  
+-a----        03-10-2026     13:38          24840 pcg64dxsm-testset-2.csv                                                                  
+-a----        03-10-2026     13:38          24853 philox-testset-1.csv                                                                     
+-a----        03-10-2026     13:38          24839 philox-testset-2.csv                                                                     
+-a----        03-10-2026     13:38          24841 sfc64-testset-1.csv                                                                      
+-a----        03-10-2026     13:38          24834 sfc64-testset-2.csv                                                                      
+
+
+    Directory: D:\Desktop\adhikar-setu\.venv\Lib\site-packages\numpy\_core\tests\data
+
+
+Mode                 LastWriteTime         Length Name                                                                                     
+----                 -------------         ------ ----                                                                                     
+-a----        03-10-2026     13:38          62794 umath-validation-set-arccos.csv                                                          
+-a----        03-10-2026     13:38          62794 umath-validation-set-arccosh.csv                                                         
+-a----        03-10-2026     13:38          62768 umath-validation-set-arcsin.csv                                                          
+-a----        03-10-2026     13:38          61718 umath-validation-set-arcsinh.csv                                                         
+-a----        03-10-2026     13:38          61734 umath-validation-set-arctan.csv                                                          
+-a----        03-10-2026     13:38          62768 umath-validation-set-arctanh.csv                                                         
+-a----        03-10-2026     13:38          62275 umath-validation-set-cbrt.csv                                                            
+-a----        03-10-2026     13:38          60497 umath-validation-set-cos.csv                                                             
+-a----        03-10-2026     13:38          62298 umath-validation-set-cosh.csv                                                            
+-a----        03-10-2026     13:38          17903 umath-validation-set-exp.csv                                                             
+-a----        03-10-2026     13:38          60053 umath-validation-set-exp2.csv                                                            
+-a----        03-10-2026     13:38          61728 umath-validation-set-expm1.csv                                                           
+-a----        03-10-2026     13:38          11963 umath-validation-set-log.csv                                                             
+-a----        03-10-2026     13:38          70551 umath-validation-set-log10.csv                                                           
+-a----        03-10-2026     13:38          61732 umath-validation-set-log1p.csv                                                           
+-a----        03-10-2026     13:38          70546 umath-validation-set-log2.csv                                                            
+-a----        03-10-2026     13:38          59981 umath-validation-set-sin.csv                                                             
+-a----        03-10-2026     13:38          61722 umath-validation-set-sinh.csv                                                            
+-a----        03-10-2026     13:38          61728 umath-validation-set-tan.csv                                                             
+-a----        03-10-2026     13:38          61728 umath-validation-set-tanh.csv                                                            
+
+
+    Directory: D:\Desktop\adhikar-setu\data\raw
+
+
+Mode                 LastWriteTime         Length Name                                                                                     
+----                 -------------         ------ ----                                                                                     
+-a----        03-10-2026     13:31       16756246 Schemes.csv                                                                              
+
+
+(.venv) PS D:\Desktop\adhikar-setu> python "Nimisha-sprint1\audit_dataset.py"                                                               
+Traceback (most recent call last):
+  File "D:\Desktop\adhikar-setu\Nimisha-sprint1\audit_dataset.py", line 5, in <module>
+    df = pd.read_excel(FILE_PATH)
+  File "D:\Desktop\adhikar-setu\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 481, in read_excel
+    io = ExcelFile(
+        io,
+    ...<2 lines>...
+        engine_kwargs=engine_kwargs,
+    )
+  File "D:\Desktop\adhikar-setu\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1608, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+(.venv) PS D:\Desktop\adhikar-setu> python "Nimisha-sprint1\audit_dataset.py"                                                               
+            
+========== DATASET SHAPE ==========
+Rows    : 4693
+Columns : 24
+
+========== COLUMNS ==========
+1. slug
+2. name
+3. description
+4. ministry
+5. department
+6. state
+7. category
+8. beneficiary_type
+9. benefits
+10. eligibility_text
+11. application_process
+12. documents_required
+13. apply_url
+14. official_url
+15. eligibility_age_min
+16. eligibility_age_max
+17. eligibility_gender
+18. eligibility_caste
+19. eligibility_income_max
+20. eligibility_residence
+21. eligibility_state
+22. eligibility_disability
+23. eligibility_bpl
+24. scraped_at
+
+========== DATA TYPES ==========
+slug                          str
+name                          str
+description                   str
+ministry                      str
+department                    str
+state                         str
+category                      str
+beneficiary_type              str
+benefits                      str
+eligibility_text              str
+application_process           str
+documents_required            str
+apply_url                     str
+official_url                  str
+eligibility_age_min       float64
+eligibility_age_max       float64
+eligibility_gender            str
+eligibility_caste             str
+eligibility_income_max    float64
+eligibility_residence         str
+eligibility_state             str
+eligibility_disability       bool
+eligibility_bpl              bool
+scraped_at                    str
+dtype: object
+
+========== MISSING VALUES ==========
+                        missing_count  missing_percentage
+ministry                         4012               85.49
+eligibility_income_max           3914               83.40
+eligibility_age_max              3908               83.27
+eligibility_age_min              3640               77.56
+department                        293                6.24
+beneficiary_type                   64                1.36
+documents_required                 17                0.36
+apply_url                           9                0.19
+description                         4                0.09
+application_process                 4                0.09
+benefits                            4                0.09
+category                            4                0.09
+eligibility_text                    4                0.09
+state                               0                0.00
+name                                0                0.00
+slug                                0                0.00
+official_url                        0                0.00
+eligibility_gender                  0                0.00
+eligibility_caste                   0                0.00
+eligibility_residence               0                0.00
+eligibility_state                   0                0.00
+eligibility_disability              0                0.00
+eligibility_bpl                     0                0.00
+scraped_at                          0                0.00
+
+========== DUPLICATE ROWS ==========
+Duplicate rows: 0
+
+========== DUPLICATE SLUGS ==========
+Duplicate slugs: 0
+
+========== DUPLICATE NAMES ==========
+Duplicate names: 0
+
+========== UNIQUE STATES ==========
+state
+Central                                 684
+Gujarat                                 636
+Uttarakhand                             440
+Madhya Pradesh                          283
+Goa                                     269
+Puducherry                              267
+Haryana                                 246
+Tamil Nadu                              232
+Rajasthan                               156
+Bihar                                   112
+West Bengal                             110
+Chhattisgarh                            106
+Jharkhand                                95
+Maharashtra                              83
+Meghalaya                                83
+Odisha                                   82
+Kerala                                   81
+Assam                                    78
+Himachal Pradesh                         68
+Dadra & Nagar Haveli and Daman & Diu     62
+Karnataka                                56
+Andhra Pradesh                           50
+Delhi                                    49
+Uttar Pradesh                            46
+Jammu and Kashmir                        42
+Punjab                                   40
+Arunachal Pradesh                        38
+Tripura                                  37
+Manipur                                  27
+Mizoram                                  25
+Sikkim                                   22
+Telangana                                20
+Chandigarh                               20
+Andaman and Nicobar Islands              19
+Nagaland                                 16
+Lakshadweep                               9
+Ladakh                                    4
+Name: count, dtype: int64
+
+========== UNIQUE GENDERS ==========
+eligibility_gender
+all       4228
+female     448
+male        17
+Name: count, dtype: int64
+
+========== UNIQUE RESIDENCE ==========
+eligibility_residence
+both     4600
+rural      67
+urban      26
+Name: count, dtype: int64
+
+========== SAMPLE RECORD ==========
+slug                                                           ira-wrflsncs
+name                       "Immediate Relief Assistance" under "Welfare ...
+description               The scheme "Immediate Relief Assistance" under...
+ministry                                                                NaN
+department                Fisheries and Fishermen Welfare Department, Pu...
+state                                                            Puducherry
+category                  Agriculture,Rural & Environment, Social welfar...
+beneficiary_type                                         Individual, Family
+benefits                  ₹ 1,00,000, in two installments of ₹ 50,000 ea...
+eligibility_text          - The applicant should be the family (legal he...
+application_process       [Offline]\nStep 1: The interested applicant sh...
+documents_required        Photograph of the Family (Legal Heir) of the M...
+apply_url                 https://fisheries.py.gov.in/sites/default/file...
+official_url               https://www.myscheme.gov.in/schemes/ira-wrflsncs
+eligibility_age_min                                                    18.0
+eligibility_age_max                                                    60.0
+eligibility_gender                                                      all
+eligibility_caste                                                        []
+eligibility_income_max                                                  NaN
+eligibility_residence                                                  both
+eligibility_state                                            ["Puducherry"]
+eligibility_disability                                                False
+eligibility_bpl                                                       False
+scraped_at                                       2026-07-05 10:07:38.558+00
+(.venv) PS D:\Desktop\adhikar-setu> python "Nimisha-sprint1\clean_dataset.py"
+Original rows: 4693
+Original columns: 24
+Exact duplicates removed: 0
+Duplicate slugs: 0
+Duplicate names: 1
+Invalid gender values: 0
+Invalid residence values: 0
+
+========== CLEANING COMPLETE ==========
+Final rows: 4693
+Final columns: 24
+Saved to: data/processed/schemes_cleaned.csv
+
+Missing values after cleaning:
+ministry                  4012
+eligibility_income_max    3914
+eligibility_age_max       3908
+eligibility_age_min       3640
+department                 293
+beneficiary_type            64
+documents_required          17
+apply_url                    9
+description                  4
+application_process          4
+benefits                     4
+category                     4
+eligibility_text             4
+state                        0
+name                         0
+slug                         0
+official_url                 0
+eligibility_gender           0
+eligibility_caste            0
+eligibility_residence        0
+eligibility_state            0
+eligibility_disability       0
+eligibility_bpl              0
+scraped_at                   0
+dtype: int64
+(.venv) PS D:\Desktop\adhikar-setu> python "Nimisha-sprint1\audit_dataset.py"
+
+========== DATASET SHAPE ==========
+Rows    : 4693
+Columns : 24
+
+========== COLUMNS ==========
+1. slug
+2. name
+3. description
+4. ministry
+5. department
+6. state
+7. category
+8. beneficiary_type
+9. benefits
+10. eligibility_text
+11. application_process
+12. documents_required
+13. apply_url
+14. official_url
+15. eligibility_age_min
+16. eligibility_age_max
+17. eligibility_gender
+18. eligibility_caste
+19. eligibility_income_max
+20. eligibility_residence
+21. eligibility_state
+22. eligibility_disability
+23. eligibility_bpl
+24. scraped_at
+
+========== DATA TYPES ==========
+slug                          str
+name                          str
+description                   str
+ministry                      str
+department                    str
+state                         str
+category                      str
+beneficiary_type              str
+benefits                      str
+eligibility_text              str
+application_process           str
+documents_required            str
+apply_url                     str
+official_url                  str
+eligibility_age_min       float64
+eligibility_age_max       float64
+eligibility_gender            str
+eligibility_caste             str
+eligibility_income_max    float64
+eligibility_residence         str
+eligibility_state             str
+eligibility_disability       bool
+eligibility_bpl              bool
+scraped_at                    str
+dtype: object
+
+========== MISSING VALUES ==========
+                        missing_count  missing_percentage
+ministry                         4012               85.49
+eligibility_income_max           3914               83.40
+eligibility_age_max              3908               83.27
+eligibility_age_min              3640               77.56
+department                        293                6.24
+beneficiary_type                   64                1.36
+documents_required                 17                0.36
+apply_url                           9                0.19
+description                         4                0.09
+application_process                 4                0.09
+benefits                            4                0.09
+category                            4                0.09
+eligibility_text                    4                0.09
+state                               0                0.00
+name                                0                0.00
+slug                                0                0.00
+official_url                        0                0.00
+eligibility_gender                  0                0.00
+eligibility_caste                   0                0.00
+eligibility_residence               0                0.00
+eligibility_state                   0                0.00
+eligibility_disability              0                0.00
+eligibility_bpl                     0                0.00
+scraped_at                          0                0.00
+
+========== DUPLICATE ROWS ==========
+Duplicate rows: 0
+
+========== DUPLICATE SLUGS ==========
+Duplicate slugs: 0
+
+========== DUPLICATE NAMES ==========
+Duplicate names: 0
+
+========== UNIQUE STATES ==========
+state
+Central                                 684
+Gujarat                                 636
+Uttarakhand                             440
+Madhya Pradesh                          283
+Goa                                     269
+Puducherry                              267
+Haryana                                 246
+Tamil Nadu                              232
+Rajasthan                               156
+Bihar                                   112
+West Bengal                             110
+Chhattisgarh                            106
+Jharkhand                                95
+Maharashtra                              83
+Meghalaya                                83
+Odisha                                   82
+Kerala                                   81
+Assam                                    78
+Himachal Pradesh                         68
+Dadra & Nagar Haveli and Daman & Diu     62
+Karnataka                                56
+Andhra Pradesh                           50
+Delhi                                    49
+Uttar Pradesh                            46
+Jammu and Kashmir                        42
+Punjab                                   40
+Arunachal Pradesh                        38
+Tripura                                  37
+Manipur                                  27
+Mizoram                                  25
+Sikkim                                   22
+Telangana                                20
+Chandigarh                               20
+Andaman and Nicobar Islands              19
+Nagaland                                 16
+Lakshadweep                               9
+Ladakh                                    4
+Name: count, dtype: int64
+
+========== UNIQUE GENDERS ==========
+eligibility_gender
+all       4228
+female     448
+male        17
+Name: count, dtype: int64
+
+========== UNIQUE RESIDENCE ==========
+eligibility_residence
+both     4600
+rural      67
+urban      26
+Name: count, dtype: int64
+
+========== SAMPLE RECORD ==========
+slug                                                           ira-wrflsncs
+name                       "Immediate Relief Assistance" under "Welfare ...
+description               The scheme "Immediate Relief Assistance" under...
+ministry                                                                NaN
+department                Fisheries and Fishermen Welfare Department, Pu...
+state                                                            Puducherry
+category                  Agriculture,Rural & Environment, Social welfar...
+beneficiary_type                                         Individual, Family
+benefits                  ₹ 1,00,000, in two installments of ₹ 50,000 ea...
+eligibility_text          - The applicant should be the family (legal he...
+application_process       [Offline]\nStep 1: The interested applicant sh...
+documents_required        Photograph of the Family (Legal Heir) of the M...
+apply_url                 https://fisheries.py.gov.in/sites/default/file...
+official_url               https://www.myscheme.gov.in/schemes/ira-wrflsncs
+eligibility_age_min                                                    18.0
+eligibility_age_max                                                    60.0
+eligibility_gender                                                      all
+eligibility_caste                                                        []
+eligibility_income_max                                                  NaN
+eligibility_residence                                                  both
+eligibility_state                                            ["Puducherry"]
+eligibility_disability                                                False
+eligibility_bpl                                                       False
+scraped_at                                       2026-07-05 10:07:38.558+00
