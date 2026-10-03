@@ -60,7 +60,7 @@ scheme = get_scheme("rtif")       # {"slug", "detail", "documents", "faqs"}
 
 Raw detail/documents/faqs files are not in git. Generate them with:
 `python -m backend.ingestion.run_ingestion --stage detail` then `--stage documents` then `--stage faqs`
-(~85 min each, resumable; Ctrl+C and re-run continues).
+(~2.5 hours each, resumable; Ctrl+C and re-run continues).
 
 ## 5. Samples
 
