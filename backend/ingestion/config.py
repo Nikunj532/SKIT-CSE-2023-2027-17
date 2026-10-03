@@ -22,3 +22,7 @@ HEADERS: dict = {
 # Sort passes tried in order; results merged by id until total is reached.
 # Needed because a single paginated pass can skip/duplicate items.
 SORTS: tuple = ("schemename-asc", "schemename-desc", "")
+
+DETAIL_API_URL: str = "https://www.myscheme.gov.in/api/apisetu/schemes"
+DOCUMENTS_FILE: Path = RAW_DIR / "schemes_documents.json"
+FAQS_FILE: Path = RAW_DIR / "schemes_faqs.json"
