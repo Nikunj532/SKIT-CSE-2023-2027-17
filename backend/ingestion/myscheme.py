@@ -16,14 +16,15 @@ def _flatten(hit: dict) -> dict:
     return {"id": hit.get("id"), **hit.get("fields", {})}
 
 
-def fetch_schemes_list(client: RateLimitedClient,
-                       page_size: int = config.PAGE_SIZE,
-                       limit: Optional[int] = None) -> dict:
-    """Paginate the list API and return the data-contract envelope."""
-    items: dict[str, dict] = {}
+def _fetch_pass(client: RateLimitedClient, sort: str, page_size: int,
+                items: dict[str, dict], limit: Optional[int]) -> Optional[int]:
+    """Paginate the list API once for a given sort; merge hits into `items` by id.
+
+    Returns the total reported by the API.
+    """
     offset, total = 0, None
     while total is None or offset < total:
-        params = {"lang": "en", "q": "[]", "keyword": "", "sort": "",
+        params = {"lang": "en", "q": "[]", "keyword": "", "sort": sort,
                   "from": offset, "size": page_size}
         payload = client.get_json(config.LIST_API_URL, params=params)
         if payload.get("statusCode") != 200:
@@ -36,9 +37,33 @@ def fetch_schemes_list(client: RateLimitedClient,
         for hit in batch:
             items[hit["id"]] = _flatten(hit)
         offset += page_size
-        log.info("fetched %d / %d", len(items), total)
+        log.info("sort=%r fetched %d / %d unique", sort, len(items), total)
         if limit and len(items) >= limit:
             break
+    return total
+
+
+def fetch_schemes_list(client: RateLimitedClient,
+                       page_size: int = config.PAGE_SIZE,
+                       limit: Optional[int] = None,
+                       sorts: tuple = config.SORTS) -> dict:
+    """Fetch all schemes via multi-pass pagination; return the data-contract envelope.
+
+    A single paginated pass can skip/duplicate items, so we run one pass per
+    sort order and merge by id until the unique count reaches the API total.
+    """
+    items: dict[str, dict] = {}
+    total = None
+    for sort in sorts:
+        total = _fetch_pass(client, sort, page_size, items, limit)
+        log.info("after pass sort=%r: %d / %s unique", sort, len(items), total)
+        if limit and len(items) >= limit:
+            break
+        if total is not None and len(items) >= total:
+            break
+    if not limit and total is not None and len(items) < total:
+        log.warning("INCOMPLETE: %d of %d (missing %d)",
+                    len(items), total, total - len(items))
     out = list(items.values())[:limit] if limit else list(items.values())
     return {
         "source": config.SOURCE_NAME,
