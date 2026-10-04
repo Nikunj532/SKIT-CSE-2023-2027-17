@@ -1,0 +1,32 @@
+python Nimisha-sprint1\validate_eligibility.py
+
+========== ELIGIBILITY VALIDATION ==========
+
+========== AGE RANGE ==========
+Invalid age ranges: 0
+
+========== GENDER ==========
+Invalid gender values: 0
+
+========== RESIDENCE ==========
+Invalid residence values: 0
+
+========== INCOME ==========
+Negative income limits: 0
+
+========== NEGATIVE AGE ==========
+Negative age values: 0
+
+========== BOOLEAN FIELDS ==========
+Disability values: {False: 4385, True: 308}
+BPL values: {False: 4536, True: 157}
+
+========== ELIGIBILITY STATE ==========
+Invalid state formats: 0
+
+========== ELIGIBILITY CASTE ==========
+Invalid caste formats: 0
+
+========== VALIDATION COMPLETE ==========
+Total records: 4693
+Total columns: 24

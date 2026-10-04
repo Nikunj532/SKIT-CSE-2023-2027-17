@@ -19,3 +19,11 @@ rag/vector_store/
 
 # Logs
 *.log
+
+# Raw ingestion data: track only the list file (Nikunj, S1)
+!data/raw/
+data/raw/*
+!data/raw/myscheme/
+data/raw/myscheme/*
+!data/raw/myscheme/schemes_list.json
+!data/raw/myscheme/myscheme_detail_documents_faqs.zip
