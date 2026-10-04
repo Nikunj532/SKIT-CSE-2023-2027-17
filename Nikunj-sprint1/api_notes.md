@@ -37,9 +37,9 @@ All in `data/raw/myscheme/`, UTF-8, same envelope:
 | File | Items | In git? |
 |---|---|---|
 | `schemes_list.json` | 5089, flat `{id, **fields}` | yes |
-| `schemes_detail.json` | 5087, `{id (=_id), slug, **data.en}` | no (large, gitignored) |
-| `schemes_documents.json` | 5087, `{id, slug, documentsRequired_md, documents_required}` | no |
-| `schemes_faqs.json` | 5087, `{id, slug, faqs[{question, answer, answer_md}]}` | no |
+| `schemes_detail.json` | 5071, `{id (=_id), slug, **data.en}` | zip only (`myscheme_detail_documents_faqs.zip`) |
+| `schemes_documents.json` | 5071, `{id, slug, documentsRequired_md, documents_required}` | zip only (`myscheme_detail_documents_faqs.zip`) |
+| `schemes_faqs.json` | 5071, `{id, slug, faqs[{question, answer, answer_md}]}` | zip only (`myscheme_detail_documents_faqs.zip`) |
 
 List item fields: id, beneficiaryState, briefDescription, level, nodalMinistryName, priority, schemeCategory, schemeCloseDate, schemeFor, schemeName, schemeShortTitle, slug, tags.
 
@@ -58,7 +58,7 @@ schemes = load_schemes()          # list items
 scheme = get_scheme("rtif")       # {"slug", "detail", "documents", "faqs"}
 ```
 
-Raw detail/documents/faqs files are not in git. Generate them with:
+Raw detail/documents/faqs are in git only as `data/raw/myscheme/myscheme_detail_documents_faqs.zip`; unzip it inside `data/raw/myscheme/`. To regenerate instead, run:
 `python -m backend.ingestion.run_ingestion --stage detail` then `--stage documents` then `--stage faqs`
 (~2.5 hours each, resumable; Ctrl+C and re-run continues).
 
@@ -75,5 +75,5 @@ See `sample_outputs/` (small samples only).
 | faqs | 5071 | 5058 have FAQs |
 
 - Same 5071 slugs in detail, documents and faqs. Missing 16 slugs: detail API returns `data: null` (permanent), so documents/faqs were skipped for them. All 16 are present in the HF CSV (`data/raw/Schemes.csv`, same slug), use it to fill their text in S2.
-- File sizes (not in git): detail 52 MB, documents 7.3 MB, faqs 25 MB.
+- File sizes (unzipped; only the zip is in git): detail 52 MB, documents 7.3 MB, faqs 25 MB.
 - Observed speed: ~100 schemes per 2.7 min (1 sec delay + network), ~2.3 h per stage.

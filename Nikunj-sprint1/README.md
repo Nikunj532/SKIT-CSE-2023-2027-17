@@ -20,7 +20,7 @@ Ctrl+C is safe; re-running continues from the checkpoint. Delay is 1 sec per cal
 
 ## Output (data contract)
 
-See `api_notes.md`. Join key across all files is `slug` (not `id`). Only `schemes_list.json` is in git; detail/documents/faqs files are generated locally.
+See `api_notes.md`. Join key across all files is `slug` (not `id`). In git: `schemes_list.json` and `myscheme_detail_documents_faqs.zip` (detail, documents, faqs, 5071 slugs each, 11.8 MB). Unzip it inside `data/raw/myscheme/` (the unzipped JSON files are gitignored).
 
 ## Done checklist
 
