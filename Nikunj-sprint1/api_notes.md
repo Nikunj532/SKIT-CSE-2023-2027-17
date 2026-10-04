@@ -65,3 +65,15 @@ Raw detail/documents/faqs files are not in git. Generate them with:
 ## 5. Samples
 
 See `sample_outputs/` (small samples only).
+## 6. Final run numbers (04/10/2026)
+
+| Stage | Items | With content |
+|---|---|---|
+| list | 5089 (5087 unique slugs) | all |
+| detail | 5071 | all |
+| documents | 5071 | 4678 have `documentsRequired_md` |
+| faqs | 5071 | 5058 have FAQs |
+
+- Same 5071 slugs in detail, documents and faqs. Missing 16 slugs: detail API returns `data: null` (permanent), so documents/faqs were skipped for them. All 16 are present in the HF CSV (`data/raw/Schemes.csv`, same slug), use it to fill their text in S2.
+- File sizes (not in git): detail 52 MB, documents 7.3 MB, faqs 25 MB.
+- Observed speed: ~100 schemes per 2.7 min (1 sec delay + network), ~2.3 h per stage.

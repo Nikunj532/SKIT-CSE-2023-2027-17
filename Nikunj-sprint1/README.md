@@ -29,12 +29,12 @@ See `api_notes.md`. Join key across all files is `slug` (not `id`). Only `scheme
 - [x] CLI with `--stage`
 - [x] `api_notes.md` (APIs, findings, contract)
 - [x] Sample outputs in `sample_outputs/`
-- [ ] Detail stage run complete
-- [ ] Documents stage run complete
-- [ ] Faqs stage run complete
+- [x] Detail stage run complete (5071 / 5087)
+- [x] Documents stage run complete (5071 / 5087, 4678 with text)
+- [x] Faqs stage run complete (5071 / 5087, 5058 with FAQs)
 - [ ] Merge `origin/main`, push, PR to `main`
 
 ## Known limitations
 
 - 2 duplicate slugs in the list (`psnjsy`, `tufs`); Puducherry "TUFS" detail is not available.
-- Some schemes have no detail in the API (`data: null`); they are listed in `schemes_detail_failed.json` and skipped in documents/faqs.
+- Some schemes have no detail in the API (`data: null`); they are listed in `schemes_detail_failed.json` and skipped in documents/faqs.- 16 slugs have no detail in the API (`data: null`, permanent, listed in `schemes_detail_failed.json`): 12 central ("All"), 2 Dadra & Nagar Haveli and Daman & Diu, 2 Himachal Pradesh. Their documents/faqs were skipped. All 16 exist in the HF dataset CSV (`data/raw/Schemes.csv`), so S2 can fill their text from it by slug.
