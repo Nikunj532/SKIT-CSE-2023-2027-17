@@ -37,4 +37,5 @@ See `api_notes.md`. Join key across all files is `slug` (not `id`). In git: `sch
 ## Known limitations
 
 - 2 duplicate slugs in the list (`psnjsy`, `tufs`); Puducherry "TUFS" detail is not available.
-- Some schemes have no detail in the API (`data: null`); they are listed in `schemes_detail_failed.json` and skipped in documents/faqs.- 16 slugs have no detail in the API (`data: null`, permanent, listed in `schemes_detail_failed.json`): 12 central ("All"), 2 Dadra & Nagar Haveli and Daman & Diu, 2 Himachal Pradesh. Their documents/faqs were skipped. All 16 exist in the HF dataset CSV (`data/raw/Schemes.csv`), so S2 can fill their text from it by slug.
+- Some schemes have no detail in the API (`data: null`); they are listed in `schemes_detail_failed.json` and skipped in documents/faqs.
+- 16 slugs have no detail in the API (`data: null`, permanent, listed in `schemes_detail_failed.json`): 12 central ("All"), 2 Dadra & Nagar Haveli and Daman & Diu, 2 Himachal Pradesh. Their documents/faqs were skipped. All 16 exist in the HF dataset CSV (`data/raw/Schemes.csv`), so S2 can fill their text from it by slug.
