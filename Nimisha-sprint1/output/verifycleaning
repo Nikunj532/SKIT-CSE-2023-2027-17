@@ -1,0 +1,38 @@
+ python Nimisha-sprint1\verify_text_cleaning.py
+
+========== TEXT CLEANING VERIFICATION ==========
+Total records: 4693
+
+========== HTML TAGS ==========
+name                      remaining HTML: 0
+description               remaining HTML: 0
+benefits                  remaining HTML: 0
+eligibility_text          remaining HTML: 0
+application_process       remaining HTML: 0
+documents_required        remaining HTML: 0
+
+Total fields containing HTML: 0
+
+========== HTML ENCODED ENTITIES ==========
+name                      remaining entities: 0
+description               remaining entities: 0
+benefits                  remaining entities: 0
+eligibility_text          remaining entities: 1
+application_process       remaining entities: 0
+documents_required        remaining entities: 0
+
+Total fields containing encoded entities: 1
+
+========== MISSING VALUES ==========
+name                      missing: 0
+description               missing: 4
+benefits                  missing: 5
+eligibility_text          missing: 4
+application_process       missing: 4
+documents_required        missing: 17
+
+========== ROW / COLUMN CHECK ==========
+Rows   : 4693
+Columns: 24
+
+========== COMPLETE ==========
