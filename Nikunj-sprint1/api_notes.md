@@ -77,3 +77,13 @@ See `sample_outputs/` (small samples only).
 - Same 5071 slugs in detail, documents and faqs. Missing 16 slugs: detail API returns `data: null` (permanent), so documents/faqs were skipped for them. All 16 are present in the HF CSV (`data/raw/Schemes.csv`, same slug), use it to fill their text in S2.
 - File sizes (unzipped; only the zip is in git): detail 52 MB, documents 7.3 MB, faqs 25 MB.
 - Observed speed: ~100 schemes per 2.7 min (1 sec delay + network), ~2.3 h per stage.
+
+## Sprint 2: cleaned dataset (data contract)
+File: `data/processed/myscheme/schemes_clean.json` -> `{source, built_at, total, items}`; loader: `backend.cleaning.load_clean_schemes`.
+One item per unique slug (5086). Fields:
+- ids/meta: `slug`, `id`, `name`, `level`, `official_url`, `apply_url` (may be null), `source` ("api" | "hf_csv"), `filled_from_hf` (list), `dbt`, `close_date`
+- lists of str: `states`, `categories`, `sub_categories`, `tags`, `target_beneficiaries`
+- str: `ministry`, `department`, `scheme_for`, `brief_description`, `description`, `benefits`, `eligibility`, `exclusions`, `application_process`, `documents_required`
+- `faqs`: list of `{question, answer}`; `references`: list of `{title, url}`
+- eligibility (from HF CSV, may be null): `eligibility_age_min`, `eligibility_age_max`, `eligibility_gender`, `eligibility_caste` (list), `eligibility_income_max`, `eligibility_residence`, `eligibility_state` (list), `eligibility_disability`, `eligibility_bpl`
+Do not rename or remove fields without telling the team.
