@@ -1,8 +1,9 @@
-from pydantic import BaseModel, Field
 from typing import List, Optional
+from pydantic import BaseModel, Field
 
 
 class Scheme(BaseModel):
+    """Core government scheme schema for scheme services and search APIs."""
     scheme_id: str = Field(..., description="Unique scheme identifier")
     name: str = Field(..., description="Name of the government scheme")
     description: str = Field(..., description="Brief summary of the scheme")
@@ -23,3 +24,15 @@ class SchemeSearchResponse(BaseModel):
     limit: int = Field(..., description="Maximum results per page")
     total_pages: int = Field(..., description="Total number of available pages")
     schemes: List[Scheme] = Field(default_factory=list, description="List of matching scheme objects")
+
+
+# Cross-compatibility bridges: expose backend.app models if present
+try:
+    from backend.app.schemas.scheme import (
+        SchemeBase,
+        SchemeCreate,
+        SchemeResponse,
+        SchemeListResponse,
+    )
+except ImportError:
+    pass
