@@ -1,0 +1,154 @@
+[
+  {
+    "scheme_id": "sch_pm_kisan",
+    "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "description": "Income support scheme to all landholding farmers' families in the country to supplement their financial needs for agricultural inputs.",
+    "ministry": "Ministry of Agriculture and Farmers Welfare",
+    "state": "Central",
+    "category": "Agriculture",
+    "benefits": [
+      "Direct benefit transfer of Rs. 6,000 per year in three equal 4-monthly installments of Rs. 2,000 each directly into bank accounts."
+    ],
+    "eligibility": [
+      "Small and marginal landholder farmer families with cultivable landholding up to 2 hectares.",
+      "Valid Aadhaar and bank account linked with NPCI."
+    ],
+    "documents": [
+      "Aadhaar card",
+      "Land ownership citizenship documents (Khatauni)",
+      "Active bank account passbook"
+    ],
+    "application_process": [
+      "Visit official PM-KISAN portal (pmkisan.gov.in)",
+      "Click on Farmers Corner and select New Farmer Registration",
+      "Submit Aadhaar number and land details for verification"
+    ],
+    "official_url": "https://pmkisan.gov.in"
+  },
+  {
+    "scheme_id": "sch_ayushman_bharat",
+    "name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+    "description": "National public health insurance fund that aims to provide free access to healthcare for low income earners in the country.",
+    "ministry": "Ministry of Health and Family Welfare",
+    "state": "Central",
+    "category": "Health",
+    "benefits": [
+      "Cashless and paperless access to healthcare services up to Rs. 5,00,000 per family per year for secondary and tertiary care hospitalization."
+    ],
+    "eligibility": [
+      "Families identified under the Socio-Economic Caste Census (SECC) 2011 database as deprived rural households and occupational categories of urban workers."
+    ],
+    "documents": [
+      "Aadhaar card or Ration Card",
+      "PM-JAY Family ID card"
+    ],
+    "application_process": [
+      "Check eligibility on mera.pmjay.gov.in or visit any empaneled hospital",
+      "Present identity proof to the Ayushman Mitra for instant verification"
+    ],
+    "official_url": "https://pmjay.gov.in"
+  },
+  {
+    "scheme_id": "sch_devnarayan_sc",
+    "name": "Devnarayan Gurukul Yojana",
+    "description": "Educational scheme in Rajasthan providing free residential schooling in reputed private English medium schools for students from Special Backward Classes.",
+    "ministry": "Department of Social Justice and Empowerment",
+    "state": "Rajasthan",
+    "category": "Education",
+    "benefits": [
+      "Free quality education from Class 6 to 12 in selected prestigious residential schools, including lodging, boarding, uniforms, and textbooks."
+    ],
+    "eligibility": [
+      "Resident of Rajasthan belonging to designated Special Backward Classes (Banjara, Gadia Luhar, Gujjar, Raika, Gadaria).",
+      "Family annual income not exceeding Rs. 2.5 Lakhs."
+    ],
+    "documents": [
+      "Rajasthan Domicile Certificate (Bonafide)",
+      "Caste Certificate",
+      "Income Certificate",
+      "Previous class marksheet"
+    ],
+    "application_process": [
+      "Apply through Rajasthan SSO portal (sso.rajasthan.gov.in) using SJMS portal application form",
+      "Appear for the state entrance examination conducted by the Department"
+    ],
+    "official_url": "https://sje.rajasthan.gov.in"
+  },
+  {
+    "scheme_id": "sch_pm_awas_yojana",
+    "name": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)",
+    "description": "Flagship social welfare programme to provide pucca houses with basic amenities to all houseless households living in kutcha and dilapidated houses.",
+    "ministry": "Ministry of Rural Development",
+    "state": "Central",
+    "category": "Housing",
+    "benefits": [
+      "Financial assistance of Rs. 1,20,000 in plains and Rs. 1,30,000 in hilly/difficult areas for pucca house construction.",
+      "Additional 90/95 person days of unskilled labour under MGNREGS."
+    ],
+    "eligibility": [
+      "Houseless families or households living in zero, one or two-room houses with kutcha wall and roof as per SECC 2011 data."
+    ],
+    "documents": [
+      "Aadhaar card",
+      "Bank account details",
+      "MGNREGA Job Card number"
+    ],
+    "application_process": [
+      "Gram Sabha verifies the eligible beneficiary list derived from Awaas+ survey",
+      "Registration completed through Gram Panchayat office"
+    ],
+    "official_url": "https://pmayg.nic.in"
+  },
+  {
+    "scheme_id": "sch_post_matric_scholarship",
+    "name": "Post-Matric Scholarship for SC/ST/OBC Students",
+    "description": "Scholarship assistance for students belonging to Scheduled Castes, Scheduled Tribes, and Other Backward Classes studying post-matriculation courses.",
+    "ministry": "Social Justice and Empowerment Department",
+    "state": "Rajasthan",
+    "category": "Education",
+    "benefits": [
+      "100% reimbursement of non-refundable tuition and examination fees along with monthly maintenance allowances."
+    ],
+    "eligibility": [
+      "Bonafide resident of Rajasthan studying in recognized higher education institutions.",
+      "Annual family income ceiling of Rs. 2,50,000 for SC/ST and Rs. 1,50,000 for OBC."
+    ],
+    "documents": [
+      "Jan Aadhaar Card / Aadhaar Card",
+      "Caste Certificate",
+      "Income Certificate of parents",
+      "Fee receipt of current academic year",
+      "10th Marksheet"
+    ],
+    "application_process": [
+      "Log in to Rajasthan Single Sign On (SSO) portal",
+      "Access Scholarship (SJMS) application and fill academic details",
+      "Upload verified fee receipts and submit to institution nodal officer"
+    ],
+    "official_url": "https://sje.rajasthan.gov.in"
+  },
+  {
+    "scheme_id": "sch_mukhyamantri_chiranjeevi",
+    "name": "Mukhyamantri Chiranjeevi Swasthya Bima Yojana",
+    "description": "Universal health insurance scheme for all families residing in Rajasthan covering tertiary and secondary care hospitalization costs.",
+    "ministry": "Department of Medical, Health and Family Welfare",
+    "state": "Rajasthan",
+    "category": "Health",
+    "benefits": [
+      "Cashless medical treatment cover up to Rs. 25,00,000 per family per year across empaneled government and private hospitals."
+    ],
+    "eligibility": [
+      "All resident families of Rajasthan possessing a valid Jan Aadhaar card.",
+      "Free coverage for NFSA, SECC, small farmers, and contractual workers; nominal premium for others."
+    ],
+    "documents": [
+      "Jan Aadhaar card",
+      "Aadhaar card of family members"
+    ],
+    "application_process": [
+      "Register at nearest E-Mitra kiosk or online through the Chiranjeevi portal using Jan Aadhaar ID",
+      "Show Jan Aadhaar card at hospital Chiranjeevi helpdesk during admission"
+    ],
+    "official_url": "https://chiranjeevi.rajasthan.gov.in"
+  }
+]
