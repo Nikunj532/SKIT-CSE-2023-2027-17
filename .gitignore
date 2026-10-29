@@ -9,6 +9,7 @@ __pycache__/
 # Generated data
 data/raw/
 data/processed/
+data/profiles.json
 
 # ML / vector database files
 models/*.h5
