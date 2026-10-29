@@ -1,0 +1,883 @@
+{
+  "source": "myscheme.gov.in",
+  "stage": "detail",
+  "note": "first 2 items sample",
+  "items": [
+    {
+      "id": "659cd9f56093f0fa3319a3a1",
+      "slug": "ira-wrflsncs",
+      "applicationProcess": [
+        {
+          "mode": "Offline",
+          "process": [
+            {
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Step 1: "
+                },
+                {
+                  "text": "The interested applicant should visit the office of the "
+                },
+                {
+                  "children": [
+                    {
+                      "text": "concerned authority"
+                    }
+                  ],
+                  "link": "https://fisheries.py.gov.in/sub-offices",
+                  "type": "link"
+                },
+                {
+                  "text": " i.e. the Department of Fisheries and Fishermen Welfare/Sub-Offices of outlying regions in all four regions."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Step 1: "
+                },
+                {
+                  "text": "The interested applicant should request the hard copy of the "
+                },
+                {
+                  "children": [
+                    {
+                      "text": "prescribed format"
+                    }
+                  ],
+                  "link": "https://fisheries.py.gov.in/sites/default/files/aquarium20subsidy20notification.pdf",
+                  "type": "link"
+                },
+                {
+                  "text": " of the application form from the concerned authority."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Step 2: "
+                },
+                {
+                  "text": "In the application form, fill in all the mandatory fields, paste the passport-sized photograph (signed across, if required), and attach copies of all the mandatory documents (self-attest, if required)."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Step 3: "
+                },
+                {
+                  "text": "Submit the duly filled and signed application form along with the documents to the concerned authority."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Step 4: "
+                },
+                {
+                  "text": "Request a receipt or acknowledgment from the concerned authority to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable)."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "bold": true,
+                  "italic": true,
+                  "text": "*The affected family (legal heir) should apply immediately within 30 days from the date of the event for consideration."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "process_md": "**Step 1:** The interested applicant should visit the office of the [concerned authority](https://fisheries.py.gov.in/sub-offices) i.e. the Department of Fisheries and Fishermen Welfare/Sub-Offices of outlying regions in all four regions.\n**Step 1:** The interested applicant should request the hard copy of the [prescribed format](https://fisheries.py.gov.in/sites/default/files/aquarium20subsidy20notification.pdf) of the application form from the concerned authority.\n**Step 2:** In the application form, fill in all the mandatory fields, paste the passport-sized photograph (signed across, if required), and attach copies of all the mandatory documents (self-attest, if required).\n**Step 3:** Submit the duly filled and signed application form along with the documents to the concerned authority.\n**Step 4:** Request a receipt or acknowledgment from the concerned authority to whom the application has been submitted. Ensure that the receipt contains essential details such as the date and time of submission, and a unique identification number (if applicable).\n****The affected family (legal heir) should apply immediately within 30 days from the date of the event for consideration.***\n"
+        }
+      ],
+      "basicDetails": {
+        "dbtScheme": false,
+        "level": {
+          "label": "State/ UT",
+          "value": "state"
+        },
+        "nodalDepartmentName": {
+          "label": "Fisheries and Fishermen Welfare Department, Puducherry",
+          "value": 34000015
+        },
+        "schemeCategory": [
+          {
+            "label": "Agriculture,Rural & Environment",
+            "value": "628ce6ead6d1a3bde4685252"
+          },
+          {
+            "label": "Social welfare & Empowerment",
+            "value": "628ce87cd6d1a3bde4685312"
+          }
+        ],
+        "schemeFor": "Family",
+        "schemeName": " \"Immediate Relief Assistance\" under \"Welfare and Relief for Fishermen During Lean Seasons and Natural Calamities Scheme\"",
+        "schemeOpenDate": null,
+        "schemeShortTitle": "IRA-WRFLSNCS",
+        "schemeSubCategory": [
+          {
+            "label": "Fishing and hunting",
+            "value": "Fishing and hunting"
+          },
+          {
+            "label": "Financial assistance",
+            "value": "Financial assistance"
+          },
+          {
+            "label": "Crisis/Disaster/Accident",
+            "value": "Crisis/Disaster/Accident"
+          }
+        ],
+        "state": {
+          "label": "Puducherry",
+          "value": 34
+        },
+        "tags": [
+          "Missing",
+          "Fisherman",
+          "Relief",
+          "Financial Assistance",
+          "Family"
+        ],
+        "targetBeneficiaries": [
+          {
+            "label": "Individual",
+            "value": "individual"
+          },
+          {
+            "label": "Family",
+            "value": "family"
+          }
+        ]
+      },
+      "eligibilityCriteria": {
+        "eligibilityDescription": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "text": "The applicant should be the family (legal heir) of the missing fisherman."
+                  }
+                ],
+                "type": "list_item"
+              },
+              {
+                "children": [
+                  {
+                    "text": "The missing fisherman should have been a resident of the Union territory of Puducherry."
+                  }
+                ],
+                "type": "list_item"
+              },
+              {
+                "children": [
+                  {
+                    "text": "The missing fisherman must have lost his/her life while fishing. "
+                  }
+                ],
+                "type": "list_item"
+              },
+              {
+                "children": [
+                  {
+                    "text": "The missing fisherman must have been in the age group of 18-60 years."
+                  }
+                ],
+                "type": "list_item"
+              },
+              {
+                "children": [
+                  {
+                    "text": "The missing fisherman must not have been a beneficiary of the old age pension scheme. "
+                  }
+                ],
+                "type": "list_item"
+              },
+              {
+                "children": [
+                  {
+                    "text": "The missing fisherman should have enrolled as a member of the Fishermen/Fisherwomen Co-operative Society."
+                  }
+                ],
+                "type": "list_item"
+              }
+            ],
+            "type": "ul_list"
+          }
+        ],
+        "eligibilityDescription_md": "\n- The applicant should be the family (legal heir) of the missing fisherman.\n- The missing fisherman should have been a resident of the Union territory of Puducherry.\n- The missing fisherman must have lost his/her life while fishing. \n- The missing fisherman must have been in the age group of 18-60 years.\n- The missing fisherman must not have been a beneficiary of the old age pension scheme. \n- The missing fisherman should have enrolled as a member of the Fishermen/Fisherwomen Co-operative Society.\n\n"
+      },
+      "schemeContent": {
+        "benefitTypes": {
+          "id": 1,
+          "label": "Cash",
+          "value": "cash"
+        },
+        "benefits": [
+          {
+            "children": [
+              {
+                "text": "₹ 1,00,000, in two installments of ₹ 50,000 each, as immediate relief assistance for the family (legal heir) of the missing fisherman."
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "children": [
+              {
+                "text": ""
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "children": [
+              {
+                "bold": true,
+                "text": "Disbursal"
+              }
+            ],
+            "type": "block_quote"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "text": "Initially, 50% will be extended within 3 months from the date of receipt of the application from the family (legal heir)."
+                  }
+                ],
+                "type": "list_item"
+              },
+              {
+                "children": [
+                  {
+                    "text": "The family (legal heir) should approach this department for the release of the balance 50% of the relief which will be deposited in the bank in a joint account in the name of kin (legal heir) and the competent authority concerned."
+                  }
+                ],
+                "type": "list_item"
+              },
+              {
+                "children": [
+                  {
+                    "text": "If no further information is received about the missing person, the balance amount will be released in favour of the next of kin (legal heir), after the prescribed period of 9 months from the date of release of 1st part of lump sum."
+                  }
+                ],
+                "type": "list_item"
+              }
+            ],
+            "type": "ul_list"
+          },
+          {
+            "children": [
+              {
+                "bold": true,
+                "italic": true,
+                "text": "*In case of the return of the missing fishermen, the amount extended as compensation either ₹ 50,000 or ₹ 1,00,000 as the case may be, will be recovered by invoking an insurance bond. "
+              }
+            ],
+            "type": "paragraph"
+          }
+        ],
+        "benefits_md": "₹ 1,00,000, in two installments of ₹ 50,000 each, as immediate relief assistance for the family (legal heir) of the missing fisherman.\n<br>\n\n> **Disbursal**\n\n\n- Initially, 50% will be extended within 3 months from the date of receipt of the application from the family (legal heir).\n- The family (legal heir) should approach this department for the release of the balance 50% of the relief which will be deposited in the bank in a joint account in the name of kin (legal heir) and the competent authority concerned.\n- If no further information is received about the missing person, the balance amount will be released in favour of the next of kin (legal heir), after the prescribed period of 9 months from the date of release of 1st part of lump sum.\n\n****In case of the return of the missing fishermen, the amount extended as compensation either ₹ 50,000 or ₹ 1,00,000 as the case may be, will be recovered by invoking an insurance bond.*** \n",
+        "briefDescription": "The scheme \"Immediate Relief Assistance\" under \"Welfare and Relief for Fishermen During Lean Seasons and Natural Calamities Scheme\" is introduced to extend financial assistance to the fishermen's families to compensate for the loss due to the missing breadwinner and to support them financially.",
+        "detailedDescription": [
+          {
+            "children": [
+              {
+                "text": "The scheme \"Immediate Relief Assistance\" is a Sub-Component under the scheme \"Welfare and Relief for Fishermen During Lean Seasons and Natural Calamities Scheme\". The scheme is extended to all the regions of the Union territory of Puducherry. The scheme is introduced with the objective of extending financial assistance to the fishermen's families to compensate for the loss due to the missing breadwinner and to support them financially to run their family. "
+              }
+            ],
+            "type": "paragraph"
+          }
+        ],
+        "detailedDescription_md": "The scheme &quot;Immediate Relief Assistance&quot; is a Sub-Component under the scheme &quot;Welfare and Relief for Fishermen During Lean Seasons and Natural Calamities Scheme&quot;. The scheme is extended to all the regions of the Union territory of Puducherry. The scheme is introduced with the objective of extending financial assistance to the fishermen&#39;s families to compensate for the loss due to the missing breadwinner and to support them financially to run their family. \n",
+        "exclusions_md": "",
+        "references": [
+          {
+            "title": "Guidelines & Application Form",
+            "url": "https://fisheries.py.gov.in/sites/default/files/immediate20relief20notification.pdf"
+          },
+          {
+            "title": "State Plan Schemes",
+            "url": "https://fisheries.py.gov.in/sites/default/files/fisheries-state-plan-schemes.pdf"
+          },
+          {
+            "title": "List Of Sub-Offices",
+            "url": "https://fisheries.py.gov.in/sub-offices"
+          },
+          {
+            "title": "Contact Us",
+            "url": "https://fisheries.py.gov.in/contact-us"
+          }
+        ],
+        "schemeImageUrl": ""
+      },
+      "schemeDefinitions": []
+    },
+    {
+      "id": "65abac2d66a1d73a21804a12",
+      "slug": "astpss",
+      "applicationProcess": [
+        {
+          "mode": "Online",
+          "process": [
+            {
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Registration of New Institute:"
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 01: Visit "
+                },
+                {
+                  "children": [
+                    {
+                      "text": "http://portal.aicte-india.org/partnerportal_enu/start.swe"
+                    }
+                  ],
+                  "link": "http://portal.aicte-india.org/partnerportal_enu/start.swe",
+                  "type": "link"
+                },
+                {
+                  "text": " and click on "
+                },
+                {
+                  "bold": true,
+                  "text": "'New Institute'"
+                },
+                {
+                  "text": " button."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 02: Users will be redirected to another website. Hover the cursor on Login and select "
+                },
+                {
+                  "bold": true,
+                  "text": "‘Investor Login’"
+                },
+                {
+                  "text": "."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 03: New users need to click on "
+                },
+                {
+                  "bold": true,
+                  "text": "‘Sign Up Now’"
+                },
+                {
+                  "text": " to register."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 04: Enter the details and click on "
+                },
+                {
+                  "bold": true,
+                  "text": "‘Verify’"
+                },
+                {
+                  "text": " to receive OTP on your Email Id and Mobile Number."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 05: After successful verification Click on "
+                },
+                {
+                  "bold": true,
+                  "text": "‘Sign Up Now’"
+                },
+                {
+                  "text": " to register."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Post-Registration Process:"
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 01: Visit "
+                },
+                {
+                  "children": [
+                    {
+                      "text": "http://portal.aicte-india.org/partnerportal_enu/start.swe"
+                    }
+                  ],
+                  "link": "http://portal.aicte-india.org/partnerportal_enu/start.swe",
+                  "type": "link"
+                },
+                {
+                  "text": " and log in with the credentials provided by AICTE."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 02: Navigate to AQIS Application Screen by clicking on"
+                },
+                {
+                  "bold": true,
+                  "text": " ‘AQIS Application’"
+                },
+                {
+                  "text": " screen tab."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 03: Institute details will auto populate in the AQIS Application."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 04: Fill demographic and Bank details ."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 05: Only after confirming the Bank Details, the"
+                },
+                {
+                  "bold": true,
+                  "text": " 'New'"
+                },
+                {
+                  "text": " button will be enabled for adding the AQIS Application.Click on"
+                },
+                {
+                  "bold": true,
+                  "text": " 'New'"
+                },
+                {
+                  "text": " button to create AQIS Application."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 06: A unique AQIS Application ID will get created.Select ‘SHORT TERM TRAINING PROGRAMME-SFURTI SCHEME’ as Scheme from the drop down List."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 07: Now details to be filled for the as followed: Programme Details, Personalities Expected, Participating Industries ,Similar Events, Budget Estimate -Others, Academic Credentials of Coordinator/ PI/ Applicant, Justification, Credential of Institute / Department."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 07: Once the user has filled all the data in the above mentioned tab, user should click on "
+                },
+                {
+                  "bold": true,
+                  "text": "‘Validate Application’ "
+                },
+                {
+                  "text": "button on the "
+                },
+                {
+                  "bold": true,
+                  "text": "‘AQIS Application’"
+                },
+                {
+                  "text": " tab."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 08: User will get a pop up message to attach a Mandate Form  after downloading the sample form."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 09: Now fill the amount in the "
+                },
+                {
+                  "bold": true,
+                  "text": "‘Total Funds Requested’"
+                },
+                {
+                  "text": " under label "
+                },
+                {
+                  "bold": true,
+                  "text": "‘Budget Estimates Others’"
+                },
+                {
+                  "text": "."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 10: After Validation is completed successfully, read the declaration, check it and click on Save."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": "Step 10: Click on "
+                },
+                {
+                  "bold": true,
+                  "text": "'Submit'"
+                },
+                {
+                  "text": " button to submit the application."
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "process_md": "**Registration of New Institute:**\nStep 01: Visit [http://portal.aicte-india.org/partnerportal_enu/start.swe](http://portal.aicte-india.org/partnerportal_enu/start.swe) and click on **&#39;New Institute&#39;** button.\nStep 02: Users will be redirected to another website. Hover the cursor on Login and select **‘Investor Login’**.\nStep 03: New users need to click on **‘Sign Up Now’** to register.\nStep 04: Enter the details and click on **‘Verify’** to receive OTP on your Email Id and Mobile Number.\nStep 05: After successful verification Click on **‘Sign Up Now’** to register.\n<br>\n\n**Post-Registration Process:**\nStep 01: Visit [http://portal.aicte-india.org/partnerportal_enu/start.swe](http://portal.aicte-india.org/partnerportal_enu/start.swe) and log in with the credentials provided by AICTE.\nStep 02: Navigate to AQIS Application Screen by clicking on **‘AQIS Application’** screen tab.\nStep 03: Institute details will auto populate in the AQIS Application.\nStep 04: Fill demographic and Bank details .\nStep 05: Only after confirming the Bank Details, the **&#39;New&#39;** button will be enabled for adding the AQIS Application.Click on **&#39;New&#39;** button to create AQIS Application.\nStep 06: A unique AQIS Application ID will get created.Select ‘SHORT TERM TRAINING PROGRAMME-SFURTI SCHEME’ as Scheme from the drop down List.\nStep 07: Now details to be filled for the as followed: Programme Details, Personalities Expected, Participating Industries ,Similar Events, Budget Estimate -Others, Academic Credentials of Coordinator/ PI/ Applicant, Justification, Credential of Institute / Department.\nStep 07: Once the user has filled all the data in the above mentioned tab, user should click on **‘Validate Application’** button on the **‘AQIS Application’** tab.\nStep 08: User will get a pop up message to attach a Mandate Form  after downloading the sample form.\nStep 09: Now fill the amount in the **‘Total Funds Requested’** under label **‘Budget Estimates Others’**.\nStep 10: After Validation is completed successfully, read the declaration, check it and click on Save.\nStep 10: Click on **&#39;Submit&#39;** button to submit the application.\n<br>\n\n"
+        }
+      ],
+      "basicDetails": {
+        "dbtScheme": false,
+        "level": {
+          "label": "Central",
+          "value": "central"
+        },
+        "nodalDepartmentName": {
+          "label": "Department Of Higher Education",
+          "value": 1608
+        },
+        "nodalMinistryName": {
+          "label": "Ministry of Education",
+          "value": 488
+        },
+        "schemeCategory": [
+          {
+            "label": "Education & Learning",
+            "value": "628ce76cd6d1a3bde4685292"
+          }
+        ],
+        "schemeFor": "Infra",
+        "schemeName": " AICTE SHORT TERM TRAINING PROGRAMME-SFURTI SCHEME",
+        "schemeOpenDate": null,
+        "schemeShortTitle": "ASTPSS",
+        "schemeSubCategory": [
+          {
+            "label": "Education and training grants, fellowship, stipend",
+            "value": "Education and training grants, fellowship, stipend"
+          }
+        ],
+        "schemeType": {
+          "label": "Central Sector Scheme",
+          "value": "central-sector-scheme"
+        },
+        "tags": [
+          "Trainings",
+          "Financial Assistance",
+          "AICTE"
+        ],
+        "targetBeneficiaries": [
+          {
+            "label": "University / Institution",
+            "value": "institution"
+          }
+        ]
+      },
+      "eligibilityCriteria": {
+        "eligibilityDescription": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "text": "The institution should be AICTE approved."
+                  }
+                ],
+                "type": "list_item"
+              }
+            ],
+            "type": "ul_list"
+          }
+        ],
+        "eligibilityDescription_md": "\n- The institution should be AICTE approved.\n\n"
+      },
+      "schemeContent": {
+        "benefitTypes": {
+          "id": 1,
+          "label": "Cash",
+          "value": "cash"
+        },
+        "benefits": [
+          {
+            "children": [
+              {
+                "bold": true,
+                "text": "Financial Assistance"
+              },
+              {
+                "text": ": Limit of funding ₹ 4,00,000/- to the institution."
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "children": [
+              {
+                "bold": true,
+                "text": "Disbursement of the Fund: "
+              }
+            ],
+            "type": "paragraph"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "text": "The full amount of the grant sanctioned shall be released after successful conduct of the program to Indian Micro Enterprises Development Foundation (IMEDF)."
+                  }
+                ],
+                "type": "list_item"
+              },
+              {
+                "children": [
+                  {
+                    "text": "The amount spent by the institute on the conduct of STTP-SFURTI shall be adjusted on the basis of utilization certificate and detailed expenditure statement submitted by the IMEDF on the prescribed format along with other mandatory documents viz feedback form, copy of proceedings and completion report etc"
+                  }
+                ],
+                "type": "list_item"
+              }
+            ],
+            "type": "ol_list"
+          }
+        ],
+        "benefits_md": "**Financial Assistance**: Limit of funding ₹ 4,00,000/- to the institution.\n**Disbursement of the Fund:** \n\n1. The full amount of the grant sanctioned shall be released after successful conduct of the program to Indian Micro Enterprises Development Foundation (IMEDF).\n1. The amount spent by the institute on the conduct of STTP-SFURTI shall be adjusted on the basis of utilization certificate and detailed expenditure statement submitted by the IMEDF on the prescribed format along with other mandatory documents viz feedback form, copy of proceedings and completion report etc\n\n",
+        "briefDescription": "Short Term Training Programme-SFURTI Program aims to provide financial assistance from AICTE to the institutions for conducting faculty and student trainings to enable faculty members and students in the field of technical education.",
+        "detailedDescription": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "text": "Short Term Training Programme-SFURTI Program, launched by the All India Council for Technical Education (AICTE), aims to provide financial assistance to the institutions for conducting faculty and student trainings to enable faculty members and students in the field of technical education and to introspect and learn techniques that can help prepare faculty and students to impart their research work in the development of small-scale business for the nation."
+                  }
+                ],
+                "type": "paragraph"
+              },
+              {
+                "children": [
+                  {
+                    "text": "All India Council For Technical Education (AICTE) and Indian Micro Enterprises Development Foundation (IMEDF) is conducting STTP-SFURTI Program .This is a special purpose vehicle for developing alternatives group that accelerates the development of micro-enterprises. IMEDF is also the nodal agency of Ministry of Micro, Small and Medium Enterprises, Government of India for the development of clusters under STTP-SFURTI (Scheme of Fund for Regeneration of Traditional Industries."
+                  }
+                ],
+                "type": "paragraph"
+              },
+              {
+                "children": [
+                  {
+                    "bold": true,
+                    "text": ""
+                  }
+                ],
+                "type": "paragraph"
+              },
+              {
+                "children": [
+                  {
+                    "bold": true,
+                    "text": "Objectives:"
+                  }
+                ],
+                "type": "paragraph"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "text": "To understand the Scheme of Fund for Regeneration of Traditional Industries (SFURTI)."
+                      }
+                    ],
+                    "type": "list_item"
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": "To train the students and faculty in identifying and presenting a project proposal."
+                      }
+                    ],
+                    "type": "list_item"
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": "To enhance and sharpen their skills to develop a viable detailed project report."
+                      }
+                    ],
+                    "type": "list_item"
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": "To understand resource management for building a project with technological and social innovations."
+                      }
+                    ],
+                    "type": "list_item"
+                  },
+                  {
+                    "children": [
+                      {
+                        "text": "To develop an in depth understanding of project management, resolve challenges faced in sustainable rural economic development and derive lessons on social, economic and environmental impacts."
+                      }
+                    ],
+                    "type": "list_item"
+                  }
+                ],
+                "type": "ul_list"
+              },
+              {
+                "children": [
+                  {
+                    "bold": true,
+                    "text": ""
+                  }
+                ],
+                "type": "paragraph"
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "type": "paragraph"
+              }
+            ],
+            "type": "align_justify"
+          },
+          {
+            "children": [
+              {
+                "text": ""
+              }
+            ],
+            "type": "paragraph"
+          }
+        ],
+        "detailedDescription_md": "Short Term Training Programme-SFURTI Program, launched by the All India Council for Technical Education (AICTE), aims to provide financial assistance to the institutions for conducting faculty and student trainings to enable faculty members and students in the field of technical education and to introspect and learn techniques that can help prepare faculty and students to impart their research work in the development of small-scale business for the nation.\nAll India Council For Technical Education (AICTE) and Indian Micro Enterprises Development Foundation (IMEDF) is conducting STTP-SFURTI Program .This is a special purpose vehicle for developing alternatives group that accelerates the development of micro-enterprises. IMEDF is also the nodal agency of Ministry of Micro, Small and Medium Enterprises, Government of India for the development of clusters under STTP-SFURTI (Scheme of Fund for Regeneration of Traditional Industries.\n&lt;br&gt;\n\n**Objectives:**\n\n  - To understand the Scheme of Fund for Regeneration of Traditional Industries (SFURTI).\n  - To train the students and faculty in identifying and presenting a project proposal.\n  - To enhance and sharpen their skills to develop a viable detailed project report.\n  - To understand resource management for building a project with technological and social innovations.\n  - To develop an in depth understanding of project management, resolve challenges faced in sustainable rural economic development and derive lessons on social, economic and environmental impacts.\n\n&lt;br&gt;\n\n&lt;br&gt;\n\n<br>\n\n",
+        "exclusions": [
+          {
+            "children": [
+              {
+                "text": ""
+              }
+            ],
+            "type": "paragraph"
+          }
+        ],
+        "exclusions_md": "<br>\n\n",
+        "references": [
+          {
+            "title": "Guidelines",
+            "url": "https://www.aicte-india.org/sites/default/files/sfurti/STTP_SFURTI%20scheme%20doc%20amnded%20on%2010%20dec%202021.pdf"
+          }
+        ],
+        "schemeImageUrl": ""
+      },
+      "schemeDefinitions": []
+    }
+  ]
+}

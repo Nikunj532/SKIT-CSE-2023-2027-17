@@ -1,0 +1,167 @@
+{
+  "source": "myscheme.gov.in",
+  "stage": "documents",
+  "note": "first 2 items sample",
+  "items": [
+    {
+      "id": "659cd9f56093f0fa3319a3a1",
+      "slug": "ira-wrflsncs",
+      "documentsRequired_md": "\n- Photograph of the Family (Legal Heir) of the Missing Fisherman.\n- Residential Certificate of the Missing Fishermen.\n- Proof of Age of the Missing Fishermen.\n- Declaration That the Missing Fisherman Was Not a Beneficiary of the Old Age Pension Scheme. \n- Membership Certificate from the President/Administrator of Fishermen/Fisherwoman Co-operative Society. \n- Electoral Identity Card (Attested Copy)\n- Ration Card (Attested Copy)\n- Panchayathar’s Letter of Village Concerned\n- Name, Relationship, and Address of the Legal Heir (Affidavit in ₹ 5 Stamp Paper, Affixing as the Legal Heir Duly Signed in Before a Notary Public).\n- ‘No Claim’ Certificate in Respect of Financial Assistance Extended by the Revenue Department Should Be Obtained From the Department of Revenue and Disaster Management.\n- FIR and Non-traceable Certificate From Respective Station House Officer of Police Department.\n- Statement of Next Kin of Missing Person, Statement of Panchayathars, Statement of Persons Who Have Lastly Seen the Missing Person. \n- Advertisement/newspaper Report of the Missing Person in Gazette in Tamil/local Newspaper, Municipality/ Commune Panchayat Office, Ration Shop, and Police Station in the Vernacular Language. \n\n",
+      "documents_required": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "text": "Photograph of the Family (Legal Heir) of the Missing Fisherman."
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Residential Certificate of the Missing Fishermen."
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Proof of Age of the Missing Fishermen."
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Declaration That the Missing Fisherman Was Not a Beneficiary of the Old Age Pension Scheme. "
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Membership Certificate from the President/Administrator of Fishermen/Fisherwoman Co-operative Society. "
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Electoral Identity Card (Attested Copy)"
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Ration Card (Attested Copy)"
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Panchayathar’s Letter of Village Concerned"
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Name, Relationship, and Address of the Legal Heir (Affidavit in ₹ 5 Stamp Paper, Affixing as the Legal Heir Duly Signed in Before a Notary Public)."
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "‘No Claim’ Certificate in Respect of Financial Assistance Extended by the Revenue Department Should Be Obtained From the Department of Revenue and Disaster Management."
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "FIR and Non-traceable Certificate From Respective Station House Officer of Police Department."
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Statement of Next Kin of Missing Person, Statement of Panchayathars, Statement of Persons Who Have Lastly Seen the Missing Person. "
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Advertisement/newspaper Report of the Missing Person in Gazette in Tamil/local Newspaper, Municipality/ Commune Panchayat Office, Ration Shop, and Police Station in the Vernacular Language. "
+                }
+              ],
+              "type": "list_item"
+            }
+          ],
+          "type": "ul_list"
+        }
+      ]
+    },
+    {
+      "id": "65abac2d66a1d73a21804a12",
+      "slug": "astpss",
+      "documentsRequired_md": "\n1. Feedback Form\n1. Copy of Proceedings\n1. Completion Report\n\n<br>\n\n",
+      "documents_required": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "text": "Feedback Form"
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Copy of Proceedings"
+                }
+              ],
+              "type": "list_item"
+            },
+            {
+              "children": [
+                {
+                  "text": "Completion Report"
+                }
+              ],
+              "type": "list_item"
+            }
+          ],
+          "type": "ol_list"
+        },
+        {
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "type": "paragraph"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+﻿slug,name,issue_type,structured_value,eligibility_text
+gsrfas,Ganga Swarupa Punah Lagna Arthik Sahay Scheme,gender_evidence_not_found,female,"1. The applicant must be a resident of Gujarat.
+ 1. The applicant must be aged between 18 to 50 years.
+ 1. The applicant must be a beneficiary of the &amp;amp;quot;Ganga Swarup Economic Assistance Scheme&amp;amp;quot;."
+mbspy,Mukhyamantri Balika (Snatak) Protsahan Yojana,gender_evidence_not_found,female,"1. The applicant must be a resident of Bihar.
+ 1. The applicant must have graduated or obtained an equivalent degree (including Alim or Shastri) after April 25, 2018, from a government-recognized or affiliated institution within Bihar.
+ 1. The scheme applies to graduates from general, technical, or professional courses.
+ 1. The applicant must have an account in any nationalized bank, recognized private bank or India Postal Payment Bank located in Bihar."
+lpsup,Leprosy Pension Scheme,bpl_evidence_not_found,True,"1. It is necessary to be a permanent resident of Uttar Pradesh.
+1. Disabled due to leprosy (with any percentage of disability).
+1. Persons with disabilities due to leprosy may belong to any age group.
+1. Must be below the poverty and should be under Rs. 56,460/- per annum for urban and Rs. 46,080/- per annum for rural areas. 
+1. Are not taking advantage of other pension schemes."
+ignsap,Indira Gandhi National Special Ability Pension,disability_evidence_not_found,True,"1. The applicant must be a citizen of India.
+2. The person must be between 18 to 79 years old.
+3. The applicant should have 80% or more special ability.
+4. The person should belong to a below-poverty-line household.
+5. The applicant should have a valid bank account.
+<br>"
+tbwodap,Tricycles - Tamil Nadu,disability_evidence_not_found,True,"1. The applicant should be affected by both lower limbs and upper limbs should be normal. 
+1. The applicant should be a resident of the district/area of Tamil Nadu. 
+1. The applicant&#39;s age should be 12 years or above."
+saps,Vishesh Yogyajan Palanhar Yojana,disability_evidence_not_found,True,"1. The applicant must be a resident of Rajasthan.
+1. Only children aged 0 to 18 years of specially-abled parents are eligible for assistance.
+1. The child must be between 2 to 5 years of age and enrolled in an Anganwadi or school.
+1. Children above the age of 6 must be studying in a recognized educational institution.
+1. The family&#39;s annual income should not exceed ₹1,20,000/-."
+bhgy,Birsa Harit Gram Yojana,rural_evidence_not_found,rural,"1. The applicant should belong to Scheduled Castes (SC), Scheduled Tribes (ST), Primitive Tribes, or be a Below Poverty Line (BPL) family.
+1. The applicant should be a woman-headed household, a person with disabilities, or a beneficiary of the Pradhan Mantri Awas Yojana (PMAY).
+1. The applicant should be a small or marginal farmer.
+1. The applicant should possess a MGNREGA job card.
+1. The applicant&#39;s livelihood should primarily depend on agriculture.
+
+<br>
+
+<br>"
+ddugavyuk,Deen Dayal Upadhyaya Grah Aawas (Home-Stay) Vikas Yojana,rural_evidence_not_found,rural,"1. This benefit is provided as a subsidy for the construction of homestays across the state of Uttarakhand, excluding areas under Municipal Corporations and Municipalities. 
+ 1. The applicant must be a native of Uttarakhand. 
+ 1. The building owner, who resides in the building with their family, may construct a minimum of one and a maximum of six guest rooms. 
+ 1. Upon construction of a new homestay or renovation of an existing one, the property must be registered with the Uttarakhand Tourism Development Council.
+ 1. Preference will be given to buildings constructed or developed in the traditional hill-style architecture.
+
+<br>"
+pmayguk,"Pradhan Mantri Awaas Yojana - Gramin, Uttarakhand",rural_evidence_not_found,rural,"1. The applicant must be a resident of Uttarakhand.
+ 1. The selection of eligible beneficiaries for housing is done based on the “Social, Economic and Caste Census 2011 (SECC-2011)” and the Awaas Plus Permanent Waiting List.
+
+<br>"
+rtmeas,Rotavator/Thresher Machine Equipment Assistance Scheme,rural_evidence_not_found,rural,"1. The applicant should be a farmer. 
+1. The applicant should belong to the Scheduled Tribes (ST) category.
+1. The applicant should belong to a Below Poverty Line (BPL) family.
+1. The applicant should be a resident of tribal or forest areas of Gujarat.
+1. The applicant should be a farmer dependent on agriculture as the main source of livelihood.
+1. The applicant should intend to use the machinery for self-employment and agricultural purposes.
+
+<br>"

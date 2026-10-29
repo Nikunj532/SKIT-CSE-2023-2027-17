@@ -1,0 +1,271 @@
+{
+  "source": "myscheme.gov.in",
+  "stage": "faqs",
+  "note": "first 2 items sample",
+  "items": [
+    {
+      "id": "659cd9f56093f0fa3319a3a1",
+      "slug": "ira-wrflsncs",
+      "faqs": [
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "Yes, the compensation amount will be recovered by invoking an insurance bond if the missing fisherman returns.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "Yes, the compensation amount will be recovered by invoking an insurance bond if the missing fisherman returns.\n\n",
+          "question": "Is there a provision for recovering the compensation amount if the missing fisherman returns?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "The standing committee recommends the release of the relief amount, and the Director of Fisheries and Fishermen Welfare acts on this recommendation.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "The standing committee recommends the release of the relief amount, and the Director of Fisheries and Fishermen Welfare acts on this recommendation.\n\n",
+          "question": "What is the role of the standing committee in the release of relief assistance?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "The balance amount is released in favor of the next of kin (legal heir) after the prescribed 9-month period, assuming no further information is received.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "The balance amount is released in favor of the next of kin (legal heir) after the prescribed 9-month period, assuming no further information is received.\n\n",
+          "question": "What happens if the missing person is not found, and the prescribed period lapses?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "The missing fisherman should have lost his/her life while fishing, be in the age group of 18-60, and not be a beneficiary of the old age pension scheme.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "The missing fisherman should have lost his/her life while fishing, be in the age group of 18-60, and not be a beneficiary of the old age pension scheme.\n\n",
+          "question": "How is the eligibility of the missing fisherman determined?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "No, the application form must be submitted with all mandatory documents, self-attested if required, to the concerned authority.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "No, the application form must be submitted with all mandatory documents, self-attested if required, to the concerned authority.\n\n",
+          "question": "Can the application form be submitted without the prescribed documents?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "The balance 50% is released to the next of kin (legal heir) after the prescribed 9-month period and is deposited in a joint account in their name.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "The balance 50% is released to the next of kin (legal heir) after the prescribed 9-month period and is deposited in a joint account in their name.\n\n",
+          "question": "Is there any specific procedure for the release of the balance 50% of the relief amount?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "Matters of doubt or interpretation are referred to the Director of Fisheries and Fishermen Welfare, Puducherry, whose decision is final.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "Matters of doubt or interpretation are referred to the Director of Fisheries and Fishermen Welfare, Puducherry, whose decision is final.\n\n",
+          "question": "How is doubt or interpretation issues regarding the scheme addressed?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "The affected family (legal heir) must apply within 30 days from the date of the fisherman being reported missing.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "The affected family (legal heir) must apply within 30 days from the date of the fisherman being reported missing.\n\n",
+          "question": "What is the application deadline for families seeking relief assistance?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "\"Fishermen\" refers to individuals involved in fishing operations and allied activities in the Union territory of Puducherry.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "\"Fishermen\" refers to individuals involved in fishing operations and allied activities in the Union territory of Puducherry.\n\n",
+          "question": "What does the term \"Fishermen\" encompass in the context of this scheme?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "Missing fishermen are those reported by police and family members to be missing while fishing, treated as deceased for the purpose of the scheme.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "Missing fishermen are those reported by police and family members to be missing while fishing, treated as deceased for the purpose of the scheme.\n\n",
+          "question": "What is the definition of \"missing fishermen\" under the scheme?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "It includes immediate family members such as husband/wife, children/step children, parents/widow daughter/sister, legal guardian of the minor, married daughters/widow daughter in law/widowed brothers.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "It includes immediate family members such as husband/wife, children/step children, parents/widow daughter/sister, legal guardian of the minor, married daughters/widow daughter in law/widowed brothers.\n\n",
+          "question": "How is the term \"family (legal heir)\" defined in the context of the scheme?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "The relief is disbursed in two installments of ₹ 50,000 each, with the first installment released within 3 months, and the balance deposited in a joint account after the prescribed 9-month period.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "The relief is disbursed in two installments of [?] 50,000 each, with the first installment released within 3 months, and the balance deposited in a joint account after the prescribed 9-month period.\n\n",
+          "question": "How is the ₹ 1,00,000 relief assistance distributed to the family (legal heir) of the missing fisherman?"
+        }
+      ]
+    },
+    {
+      "id": "65abac2d66a1d73a21804a12",
+      "slug": "astpss",
+      "faqs": [
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "Short Term Training Programme-SFURTI Program aims to provide financial assistance from AICTE to the institutions for conducting faculty and student trainings to enable faculty members and students in the field of technical education."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "Short Term Training Programme-SFURTI Program aims to provide financial assistance from AICTE to the institutions for conducting faculty and student trainings to enable faculty members and students in the field of technical education.\n",
+          "question": "What is AICTE Short Term Training Programme-SFURTI Scheme?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "All India Council for Technical Education manages this scheme.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "All India Council for Technical Education manages this scheme.\n\n",
+          "question": "Who manages this scheme?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "Under this scheme, financial assistance is provided to the institutions for conducting faculty and student trainings."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "Under this scheme, financial assistance is provided to the institutions for conducting faculty and student trainings.\n",
+          "question": "What is the main benefit of this scheme?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "Indian Micro Enterprises Development Foundation (IMEDF) will help AICTE to conduct the programme."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "Indian Micro Enterprises Development Foundation (IMEDF) will help AICTE to conduct the programme.\n",
+          "question": "Who will help AICTE to conduct the programme?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "The full amount of the grant sanctioned shall be released after successful conduct of the program to IMEDF.\n"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "The full amount of the grant sanctioned shall be released after successful conduct of the program to IMEDF.\n\n",
+          "question": "When the grant will be released to IMEDF?"
+        },
+        {
+          "answer": [
+            {
+              "children": [
+                {
+                  "text": "The institution should be AICTE approved."
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "answer_md": "The institution should be AICTE approved.\n",
+          "question": "What should be the institution criteria?"
+        }
+      ]
+    }
+  ]
+}

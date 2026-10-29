@@ -1,0 +1,513 @@
+{
+  "source": "myscheme.gov.in",
+  "fetched_at": "2026-10-03T18:35:06.357714+00:00",
+  "total": 5089,
+  "items": [
+    {
+      "id": "thg0IZ4B5uF80_MGlmo1",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "Under this scheme, DOPT proposes to offer four short-term fellowships to researchers from the field of media / Civil Society professionals / RTI Trainers to conduct field-based research on themes relating to RTI. It is hoped that the research output will enhance their understanding of the RTI Act.",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Personnel, Public Grievances And Pensions",
+      "priority": 1,
+      "schemeCategory": [
+        "Education & Learning"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Right To Information Fellowship",
+      "schemeShortTitle": "RTIF",
+      "slug": "rtif",
+      "tags": [
+        "Internship",
+        "Student",
+        "RTI",
+        "Journalism",
+        "Communication"
+      ]
+    },
+    {
+      "id": "TMcMHJ4B0AGc0F0imBBj",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "The “National Post Doctoral Fellowship (N-PDF)” was launched by the Science and Engineering Research Board, Government of India to identify motivated young researchers and provide them support for doing research in frontier areas of science and engineering.",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Science And Technology",
+      "priority": 1,
+      "schemeCategory": [
+        "Science, IT & Communications"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "National Post Doctoral Fellowship",
+      "schemeShortTitle": "N-PDF",
+      "slug": "n-pdf",
+      "tags": [
+        "National",
+        "Post Doctoral",
+        "Fellowship",
+        "Science",
+        "Research",
+        "Fellow"
+      ]
+    },
+    {
+      "id": "LqKpG54BXu-iUKXq61Sa",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "The scheme aims to promote organic fertilizers produced at Bio-Gas and Compressed Bio-Gas plants under the Galvanizing Organic Bio-Agro Resources Dhan initiative. It provides Market Development Assistance of ₹1,500/- per Metric Tonne to manufacturing and marketing entities of organic fertilizers.",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Chemicals And Fertilizers",
+      "priority": 1,
+      "schemeCategory": [
+        "Business & Entrepreneurship",
+        "Science, IT & Communications"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Market Development Assistance",
+      "schemeShortTitle": "MDA-FERT",
+      "slug": "mda-fert",
+      "tags": [
+        "Manufacturer",
+        "Operator",
+        "Institute",
+        "Subsidy",
+        "Fertilizer"
+      ]
+    },
+    {
+      "id": "jxgdIJ4B5uF80_MGOmpz",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "The scheme aims to provide social security pensions to divyangjans aged 18 and above who belong to a poor family (BPL) in society.\n\n",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Rural Development",
+      "priority": 1,
+      "schemeCategory": [
+        "Social welfare & Empowerment"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Indira Gandhi National Disability Pension Scheme",
+      "schemeShortTitle": "IGNDPS",
+      "slug": "igndps",
+      "tags": [
+        "Differently Abled",
+        "Pension",
+        "Below Poverty Line - BPL"
+      ]
+    },
+    {
+      "id": "nKJyCJ4BXu-iUKXqjlPl",
+      "beneficiaryState": [
+        "Dadra & Nagar Haveli and Daman & Diu"
+      ],
+      "briefDescription": "The scheme is implemented by the Social Welfare Department, aims to provide financial assistance to widows aged between 18-59 years. The scheme offers ₹1,000/- per month to help meet their basic needs, ensuring public assistance for widows in need of support to maintain a dignified life.",
+      "level": "State",
+      "priority": 1,
+      "schemeCategory": [
+        "Social welfare & Empowerment"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Pension Scheme to Widow- DNH & DD",
+      "schemeShortTitle": "PSW",
+      "slug": "psw",
+      "tags": [
+        "Widow"
+      ]
+    },
+    {
+      "id": "S6IT_Z0BXu-iUKXqRVNs",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "PM VIKAS is a Central sector scheme that focuses on socio-economic empowerment of six notified minorities in the country through skilling & training, women leadership & empowerment and education. The scheme integrates erstwhile skilling & education schemes of the Ministry of Minority Affairs.",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Minority Affairs",
+      "priority": 1,
+      "schemeCategory": [
+        "Skills & Employment",
+        "Social welfare & Empowerment",
+        "Education & Learning",
+        "Business & Entrepreneurship"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Pradhan Mantri Virasat ka Samvardhan",
+      "schemeShortTitle": "PM VIKAS",
+      "slug": "pm-vikas",
+      "tags": [
+        "Skill Development",
+        "Women Entrepeneurship",
+        "Education Of School Dropouts",
+        "Socio-economic Empowerment",
+        "Minorities"
+      ]
+    },
+    {
+      "id": "7BgR950B5uF80_MGpmin",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "A welfare scheme by the Department of Military Affairs, MoD under which rigorous military training will be imparted to the youth aged between 17.5 to 23 years and meeting other educational, physical, and medical criteria, who are aspirational to be a part of the armed forces.",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Defence",
+      "priority": 1,
+      "schemeCategory": [
+        "Skills & Employment"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Agnipath Yojana",
+      "schemeShortTitle": "AY",
+      "slug": "ay",
+      "tags": [
+        "Youth",
+        "Armed Forces",
+        "Military",
+        "Agniveer",
+        "Employment",
+        "Indian Navy",
+        "Indian Air Force",
+        "Indian Army"
+      ]
+    },
+    {
+      "id": "raIFuZ0BXu-iUKXqxVFN",
+      "beneficiaryState": [
+        "Assam"
+      ],
+      "briefDescription": "The scheme aims to provide financial grants to meritorious ST (P)/OBC/MOBC students in Assam who secure high marks in Matriculation, 10+2, Graduation, or Post Graduation. Benefits include fixed monetary assistance ranging from ₹10,000/- to ₹25,000/- based on educational level.",
+      "level": "State",
+      "priority": 1,
+      "schemeCategory": [
+        "Education & Learning"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Special Incentive to ST (P)/OBC/MOBC Meritorious Students",
+      "schemeShortTitle": "SISTPOMMS",
+      "slug": "sistpomms",
+      "tags": [
+        "Incentive",
+        "Student",
+        "School",
+        "Education",
+        "Scheduled Tribe",
+        "Other Backward Class",
+        "Merit"
+      ]
+    },
+    {
+      "id": "p8czlZ0B0AGc0F0ikwx0",
+      "beneficiaryState": [
+        "Tamil Nadu"
+      ],
+      "briefDescription": "The scheme offers loans to farmers covering up to 90% of the cost of a power tiller, with an interest rate between 11% and 12.25%.\n\n",
+      "level": "State",
+      "priority": 1,
+      "schemeCategory": [
+        "Banking,Financial Services and Insurance"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Primary Cooperative Agriculture and Rural Development Bank: For Power Tiller",
+      "schemeShortTitle": "PCARDBPT",
+      "slug": "pcardbpt",
+      "tags": [
+        "Power Tiller",
+        "Loan",
+        "Farmer",
+        "Agriculture And Rural Development Bank",
+        "Farming Equipment"
+      ]
+    },
+    {
+      "id": "TKJtrp0BXu-iUKXqq1G_",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "This scheme promotes cultural activities across states and fosters unity while providing opportunities for creative expression and learning, especially for the youth.",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Culture",
+      "priority": 1,
+      "schemeCategory": [
+        "Sports & Culture"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Financial Assistance for Tagore Cultural Complexes (TCC)",
+      "schemeShortTitle": "FAFTCC",
+      "slug": "faftcc",
+      "tags": [
+        "Tagore",
+        "Music",
+        "Dance",
+        "Art And Culture"
+      ]
+    },
+    {
+      "id": "RMdyrp0B0AGc0F0iAw0S",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "The objective of the National Savings Time Deposit (TD) scheme is to promote safe and fixed-term savings by offering assured returns, encouraging individuals to invest regularly with flexible deposit amounts and no upper limit.",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Communication",
+      "priority": 1,
+      "schemeCategory": [
+        "Banking,Financial Services and Insurance"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "National Savings Time Deposit (TD)",
+      "schemeShortTitle": "NSTDTD",
+      "slug": "nstdtd",
+      "tags": [
+        "Savings Account",
+        "Banking",
+        "Money",
+        "Time Deposit"
+      ]
+    },
+    {
+      "id": "jBh6kJ0B5uF80_MG0GYW",
+      "beneficiaryState": [
+        "Nagaland"
+      ],
+      "briefDescription": "The Directorate of Higher Education (DHE) has launched the Post Matric Scholarship to ST students of the Nagaland scheme for providing socio-economic welfare to the students belonging to the residentship of Nagaland state. The student must be studying or getting admission to the post-matric class.",
+      "level": "State",
+      "priority": 1,
+      "schemeCategory": [
+        "Education & Learning"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Post Matric Scholarship To Scheduled Tribe Students Of Nagaland",
+      "schemeShortTitle": "PMSSCSN",
+      "slug": "pmsscsn",
+      "tags": [
+        "Post Matric Scholarship",
+        "Student",
+        "Scheduled Tribe",
+        "Nagaland",
+        "Higher Education"
+      ]
+    },
+    {
+      "id": "MRhGhp0B5uF80_MGv2bq",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "A scholarship scheme by the University Grants Commission for Girl students who are admitted in the first year of PG courses in any designated university or a postgraduate college, and happen to be the only girl child in the family. The amount of fellowship is ₹ 36,200/- per annum.",
+      "level": "Central",
+      "nodalMinistryName": "Ministry of Education",
+      "priority": 1,
+      "schemeCategory": [
+        "Education & Learning",
+        "Women and Child"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Post Graduate Indira Gandhi Scholarship For Single Girl Child",
+      "schemeShortTitle": "PG-IGSSGC",
+      "slug": "pg-igssgc",
+      "tags": [
+        "Scholarship",
+        "Girl Child"
+      ]
+    },
+    {
+      "id": "wccHd50B0AGc0F0i7QsY",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "'WIDUSHI' programme aims to encourage and support senior women scientists to conduct research in interdisciplinary areas of Science and Technology.",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Science And Technology",
+      "priority": 1,
+      "schemeCategory": [
+        "Women and Child",
+        "Science, IT & Communications"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Women’s Instinct for Developing and Ushering in Scientific Heights & Innovation",
+      "schemeShortTitle": "WIDUSHI",
+      "slug": "widushi",
+      "tags": [
+        "WIDUSHI",
+        "Woman",
+        "KIRAN",
+        "Scientist",
+        "Retired",
+        "Fellowship",
+        "Research"
+      ]
+    },
+    {
+      "id": "DMe9hZ0B0AGc0F0iYQxY",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "A Research Grant by MoST for female candidates to pursue research in frontier areas of science and engineering, preferably those having a break in career (minimum two years) and not having regular employment, to explore possibility of re-entry into the profession.\n",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Science And Technology",
+      "priority": 1,
+      "schemeCategory": [
+        "Education & Learning",
+        "Skills & Employment",
+        "Social welfare & Empowerment",
+        "Science, IT & Communications",
+        "Women and Child"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Women Scientist Scheme-A",
+      "schemeShortTitle": "WOS-A",
+      "slug": "wos-a",
+      "tags": [
+        "Women",
+        "Scientist",
+        "Technology",
+        "Science",
+        "Empowerment",
+        "Fellowship",
+        "Education",
+        "Unemployed"
+      ]
+    },
+    {
+      "id": "mxikdZ0B5uF80_MGSGUQ",
+      "beneficiaryState": [
+        "Tamil Nadu",
+        "Gujarat",
+        "Rajasthan",
+        "Maharashtra",
+        "West Bengal"
+      ],
+      "briefDescription": "The scheme “Scheme for Grant of Rewards to the Children of Salt Labourers” was launched by Department for Promotion of Industry and Internal Trade (DPIIT), Ministry of Commerce and Industry in the year 1985.",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Commerce And Industry",
+      "priority": 1,
+      "schemeCategory": [
+        "Social welfare & Empowerment",
+        "Education & Learning"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Scheme For Grant Of Rewards To The Children Of Salt Labourers",
+      "schemeShortTitle": "SGRCSL",
+      "slug": "sgrcsl",
+      "tags": [
+        "Salt Workers",
+        "Salt Labourers",
+        "Children",
+        "Rewards",
+        "Salt Industry",
+        "Students"
+      ]
+    },
+    {
+      "id": "2sdCYp0B0AGc0F0iiArm",
+      "beneficiaryState": [
+        "All"
+      ],
+      "briefDescription": "The scheme \"Coffee Development Programme in North Eastern Region: Expansion of Coffee\" by the Coffee Board, Department of Commerce, Ministry of Commerce and Industry, aims to facilitate afforestation in the Jhum lands and help settle the tribals on a permanent footing.",
+      "level": "Central",
+      "nodalMinistryName": "Ministry Of Commerce And Industry",
+      "priority": 1,
+      "schemeCategory": [
+        "Agriculture,Rural & Environment"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Coffee Development Programme in North Eastern Region: Expansion of Coffee",
+      "schemeShortTitle": "CDPNER:EC",
+      "slug": "cdpnerec",
+      "tags": [
+        "Agriculture",
+        "Farmer",
+        "DBT",
+        "Subsidy"
+      ]
+    },
+    {
+      "id": "OaJua50BXu-iUKXq80-P",
+      "beneficiaryState": [
+        "Meghalaya"
+      ],
+      "briefDescription": "The scheme aims to promote high-value tourism in Meghalaya by encouraging the development of agro-tourism villas, empowering local youth through entrepreneurship, improving accommodation facilities, and preserving the state’s cultural and natural heritage.",
+      "level": "State",
+      "priority": 1,
+      "schemeCategory": [
+        "Travel & Tourism"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Agro Tourism Villa Scheme",
+      "schemeShortTitle": "ATVS",
+      "slug": "atvs",
+      "tags": [
+        "Tourist",
+        "Villas",
+        "Tourism",
+        "Loans"
+      ]
+    },
+    {
+      "id": "Fsdva50B0AGc0F0iNws7",
+      "beneficiaryState": [
+        "Meghalaya"
+      ],
+      "briefDescription": "The scheme promotes alternative tourism and supports rural and eco-tourism in the state. It encourages entrepreneurship by providing financial assistance for operating motorcaravans and aims to create employment opportunities while offering unique travel experiences across Meghalaya.",
+      "level": "State",
+      "priority": 1,
+      "schemeCategory": [
+        "Travel & Tourism",
+        "Transport & Infrastructure"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Meghalaya Motorcaravan Scheme",
+      "schemeShortTitle": "MMS",
+      "slug": "mms",
+      "tags": [
+        "Tourist",
+        "Transport",
+        "Travel Agents",
+        "Tour Operators"
+      ]
+    },
+    {
+      "id": "N6JiPp0BXu-iUKXq805d",
+      "beneficiaryState": [
+        "Gujarat"
+      ],
+      "briefDescription": "Under this scheme, ₹1,20,000 financial assistance is provided for self-constructed houses in rural south Gujarat to support housing needs of Halpati (Talaviya, Nayaka) caste members included in Scheduled Tribes.",
+      "level": "State",
+      "priority": 1,
+      "schemeCategory": [
+        "Housing & Shelter"
+      ],
+      "schemeCloseDate": null,
+      "schemeFor": "Individual",
+      "schemeName": "Halpati Housing Scheme",
+      "schemeShortTitle": "HHS",
+      "slug": "hhs",
+      "tags": [
+        "Housing",
+        "Financial Assistance",
+        "Schedule Tribe",
+        "Rural Development"
+      ]
+    }
+  ]
+}
