@@ -122,6 +122,23 @@ const en = {
     application: 'Application Process',
     officialPortal: 'Official Portal',
   },
+  chat: {
+    title: 'Ask Adhikar Setu AI',
+    subtitle: 'Ask questions in simple words to understand eligibility, benefits, and required documents.',
+    placeholder: 'Type your question here (e.g. "Am I eligible for PM-KISAN?")...',
+    send: 'Ask Assistant',
+    clearChat: 'Clear History',
+    presetTitle: 'Try asking:',
+    aiThinking: 'Adhikar Setu is analyzing scheme guidelines...',
+    welcomeMessage: 'Namaste! I am your Adhikar Setu AI Assistant. You can ask me about government schemes, eligibility rules, application procedures, or documents needed. How can I help you today?'
+  },
+  alerts: {
+    title: 'Scheme Notifications & Updates',
+    subtitle: 'Important deadlines, newly added welfare programs, and disbursement announcements.',
+    tabAll: 'All Updates',
+    markAllRead: 'Mark all as read',
+    allReadMsg: 'All caught up! No unread notifications.',
+  },
   pages: {
     login: { title: 'Login', body: 'Sprint 2' },
     profileSetup: { title: 'Set up your profile', body: 'Sprint 2' },
