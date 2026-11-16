@@ -9,10 +9,12 @@ from backend.services.scheme_service import (
 )
 from Nimisha.api.profile_routes import router as profile_router
 from Nimisha.api.recommendation_routes import router as recommendation_router
+from backend.api.auth_routes import router as auth_router
 
 router = APIRouter()
 
-# Register Citizen Profile and Recommendation routers
+# Register Citizen Authentication, Profile, and Recommendation routers
+router.include_router(auth_router)
 router.include_router(profile_router)
 router.include_router(recommendation_router)
 
