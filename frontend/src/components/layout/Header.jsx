@@ -55,8 +55,12 @@ export default function Header() {
 
           {user ? (
             <>
-              <NavLink to="/profile-setup" className="site-header__link">
-                👤 {user.name ? user.name.split(' ')[0] : t('nav.profile')}
+              <NavLink
+                to="/profile-setup"
+                className="site-header__link"
+                title={user.email ? `Signed in as ${user.email}` : undefined}
+              >
+                👤 {user.name ? user.name.split(' ')[0] : (user.email ? user.email.split('@')[0] : t('nav.profile'))}
               </NavLink>
               <button
                 type="button"

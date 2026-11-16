@@ -56,3 +56,23 @@ export async function getAlerts() {
     return mock.getAlerts();
   }
 }
+
+export async function apiLoginUser(email, password) {
+  try {
+    const res = await client.post('/auth/login', { email, password });
+    return res.data;
+  } catch (err) {
+    console.warn('Backend login API call failed, falling back to local auth store', err);
+    throw err;
+  }
+}
+
+export async function apiRegisterUser(name, email, password) {
+  try {
+    const res = await client.post('/auth/register', { name, email, password });
+    return res.data;
+  } catch (err) {
+    console.warn('Backend register API call failed, falling back to local auth store', err);
+    throw err;
+  }
+}

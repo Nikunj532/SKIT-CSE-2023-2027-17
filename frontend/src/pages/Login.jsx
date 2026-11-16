@@ -2,163 +2,350 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { t } from '../i18n';
 import {
-  saveStoredUser,
-  saveStoredProfile,
+  loginUserAccount,
+  registerUserAccount,
+  loginDemoUser,
   getStoredProfile,
   DEMO_PROFILES
 } from '../services/profile';
+import { apiLoginUser, apiRegisterUser } from '../services/api';
 
 /**
- * Citizen Login page (Sprint 2).
- * Supports mobile OTP authentication simulation and instant demo profiles.
+ * Citizen Login and Authentication page.
+ * Supports Email ID & Password authentication (Sign In & Sign Up)
+ * and one-click demo citizen profiles for testing.
  */
 export default function Login() {
-  const [mobile, setMobile] = useState('');
-  const [otp, setOtp] = useState('');
-  const [otpSent, setOtpSent] = useState(false);
+  const [mode, setMode] = useState('login'); // 'login' | 'register'
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
+  const [successMsg, setSuccessMsg] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
 
-  const handleSendOtp = (e) => {
+  const handleAuthSubmit = async (e) => {
     e.preventDefault();
-    if (!mobile || mobile.replace(/\D/g, '').length !== 10) {
-      setError('Please enter a valid 10-digit Indian mobile number.');
-      return;
-    }
     setError('');
-    setOtpSent(true);
-    setOtp('1234'); // Auto-fill demo OTP for user convenience
-  };
+    setSuccessMsg('');
+    setIsSubmitting(true);
 
-  const handleVerifyOtp = (e) => {
-    e.preventDefault();
-    if (!otp || otp.trim() !== '1234') {
-      setError('Invalid OTP. Please enter the 4-digit code (1234).');
-      return;
-    }
-
-    // Save session
-    saveStoredUser({
-      phone: mobile,
-      name: 'Citizen',
-      loggedInAt: new Date().toISOString()
-    });
-
-    const existingProfile = getStoredProfile();
-    if (existingProfile && existingProfile.name) {
-      navigate('/dashboard');
-    } else {
-      navigate('/profile-setup');
+    try {
+      if (mode === 'register') {
+        if (!name.trim()) {
+          throw new Error('Please enter your full name.');
+        }
+        if (password !== confirmPassword) {
+          throw new Error('Passwords do not match. Please re-enter.');
+        }
+        // Attempt backend registration
+        try {
+          await apiRegisterUser(name, email, password);
+        } catch {
+          // Seamless fallback to client persistence
+        }
+        const user = registerUserAccount({ name, email, password });
+        setSuccessMsg(`Welcome, ${user.name}! Your account has been created.`);
+        setTimeout(() => {
+          navigate('/profile-setup');
+        }, 600);
+      } else {
+        // Attempt backend login
+        try {
+          await apiLoginUser(email, password);
+        } catch {
+          // Seamless fallback to client persistence
+        }
+        const user = loginUserAccount({ email, password });
+        setSuccessMsg(`Welcome back, ${user.name}!`);
+        setTimeout(() => {
+          const existingProfile = getStoredProfile();
+          if (existingProfile && existingProfile.name) {
+            navigate('/dashboard');
+          } else {
+            navigate('/profile-setup');
+          }
+        }, 500);
+      }
+    } catch (err) {
+      setError(err.message || 'Authentication failed. Please try again.');
+      setIsSubmitting(false);
     }
   };
 
   const handleDemoLogin = (profile) => {
-    saveStoredProfile(profile);
-    saveStoredUser({
-      name: profile.name,
-      phone: '9876543210',
-      profile_id: profile.profile_id,
-      loggedInAt: new Date().toISOString()
-    });
+    setError('');
+    loginDemoUser(profile);
     navigate('/dashboard');
   };
 
   return (
-    <div className="container" style={{ maxWidth: '580px', marginTop: '20px' }}>
-      <div className="card">
-        <div className="center" style={{ padding: '8px 0 16px' }}>
+    <div className="container" style={{ maxWidth: '540px', marginTop: '24px', marginBottom: '32px' }}>
+      <div className="card" style={{ boxShadow: '0 4px 20px rgba(15, 23, 42, 0.08)' }}>
+        {/* Header */}
+        <div className="center" style={{ padding: '8px 0 20px' }}>
+          <div style={{ fontSize: '2.5rem', marginBottom: '8px' }}>🏛️</div>
           <h1>{t('login.title')}</h1>
-          <p className="muted">{t('login.subtitle')}</p>
+          <p className="muted" style={{ fontSize: '0.92rem', maxWidth: '440px', margin: '0 auto' }}>
+            {t('login.subtitle')}
+          </p>
         </div>
 
+        {/* Tab switch between Sign In and Create Account */}
+        <div
+          style={{
+            display: 'flex',
+            background: '#f1f5f9',
+            borderRadius: '10px',
+            padding: '4px',
+            marginBottom: '20px'
+          }}
+        >
+          <button
+            type="button"
+            onClick={() => {
+              setMode('login');
+              setError('');
+              setSuccessMsg('');
+            }}
+            style={{
+              flex: 1,
+              padding: '10px 14px',
+              border: 'none',
+              borderRadius: '8px',
+              fontWeight: 600,
+              fontSize: '0.95rem',
+              cursor: 'pointer',
+              background: mode === 'login' ? '#ffffff' : 'transparent',
+              color: mode === 'login' ? 'var(--c-primary)' : 'var(--c-muted)',
+              boxShadow: mode === 'login' ? '0 2px 6px rgba(0, 0, 0, 0.08)' : 'none',
+              transition: 'all 0.15s ease'
+            }}
+          >
+            {t('login.tabSignIn')}
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setMode('register');
+              setError('');
+              setSuccessMsg('');
+            }}
+            style={{
+              flex: 1,
+              padding: '10px 14px',
+              border: 'none',
+              borderRadius: '8px',
+              fontWeight: 600,
+              fontSize: '0.95rem',
+              cursor: 'pointer',
+              background: mode === 'register' ? '#ffffff' : 'transparent',
+              color: mode === 'register' ? 'var(--c-primary)' : 'var(--c-muted)',
+              boxShadow: mode === 'register' ? '0 2px 6px rgba(0, 0, 0, 0.08)' : 'none',
+              transition: 'all 0.15s ease'
+            }}
+          >
+            {t('login.tabSignUp')}
+          </button>
+        </div>
+
+        {/* Error notification */}
         {error && (
-          <div className="notice notice--error" role="alert">
-            <p>{error}</p>
+          <div className="notice notice--error" role="alert" style={{ marginBottom: '16px' }}>
+            <p style={{ margin: 0, fontWeight: 500 }}>⚠️ {error}</p>
           </div>
         )}
 
-        {!otpSent ? (
-          <form onSubmit={handleSendOtp}>
-            <div className="form-group" style={{ marginBottom: '16px' }}>
-              <label htmlFor="mobile" className="form-label">
-                {t('login.mobileLabel')}
-              </label>
-              <div style={{ display: 'flex', gap: '8px' }}>
-                <span
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    padding: '0 12px',
-                    background: '#f1f5f9',
-                    border: '1px solid var(--c-border)',
-                    borderRadius: '8px',
-                    fontWeight: 600
-                  }}
-                >
-                  +91
-                </span>
-                <input
-                  id="mobile"
-                  type="tel"
-                  maxLength={10}
-                  className="form-input"
-                  placeholder={t('login.mobilePlaceholder')}
-                  value={mobile}
-                  onChange={(e) => setMobile(e.target.value.replace(/\D/g, ''))}
-                  required
-                />
-              </div>
-              <span className="form-hint">A 4-digit verification code will be simulated for testing.</span>
-            </div>
+        {/* Success notification */}
+        {successMsg && (
+          <div className="notice notice--success" role="alert" style={{ marginBottom: '16px' }}>
+            <p style={{ margin: 0, fontWeight: 500 }}>✅ {successMsg}</p>
+          </div>
+        )}
 
-            <button type="submit" className="btn" style={{ width: '100%' }}>
-              {t('login.requestOtp')}
-            </button>
-          </form>
-        ) : (
-          <form onSubmit={handleVerifyOtp}>
-            <div className="notice notice--success">
-              <p>
-                <strong>OTP Sent!</strong> For testing, enter demo code <strong>1234</strong>.
-              </p>
-            </div>
-
+        {/* Authentication Form */}
+        <form onSubmit={handleAuthSubmit}>
+          {mode === 'register' && (
             <div className="form-group" style={{ marginBottom: '16px' }}>
-              <label htmlFor="otp" className="form-label">
-                {t('login.otpLabel')}
+              <label htmlFor="fullName" className="form-label">
+                {t('login.nameLabel')} <span style={{ color: 'var(--c-error-border)' }}>*</span>
               </label>
               <input
-                id="otp"
+                id="fullName"
                 type="text"
-                maxLength={4}
                 className="form-input"
-                placeholder={t('login.otpPlaceholder')}
-                value={otp}
-                onChange={(e) => setOtp(e.target.value)}
+                placeholder={t('login.namePlaceholder')}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 required
               />
             </div>
+          )}
 
-            <div className="form-actions">
-              <button type="submit" className="btn" style={{ flex: 1 }}>
-                {t('login.verifyOtp')}
-              </button>
+          <div className="form-group" style={{ marginBottom: '16px' }}>
+            <label htmlFor="email" className="form-label">
+              {t('login.emailLabel')} <span style={{ color: 'var(--c-error-border)' }}>*</span>
+            </label>
+            <input
+              id="email"
+              type="email"
+              className="form-input"
+              placeholder={t('login.emailPlaceholder')}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="form-group" style={{ marginBottom: '16px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <label htmlFor="password" className="form-label">
+                {t('login.passwordLabel')} <span style={{ color: 'var(--c-error-border)' }}>*</span>
+              </label>
               <button
                 type="button"
-                className="btn btn--secondary"
-                onClick={() => setOtpSent(false)}
+                onClick={() => setShowPassword((prev) => !prev)}
+                style={{
+                  border: 'none',
+                  background: 'transparent',
+                  color: 'var(--c-primary)',
+                  fontSize: '0.8rem',
+                  cursor: 'pointer',
+                  fontWeight: 500,
+                  padding: 0
+                }}
               >
-                Change Number
+                {showPassword ? 'Hide Password' : 'Show Password'}
               </button>
             </div>
-          </form>
-        )}
+            <input
+              id="password"
+              type={showPassword ? 'text' : 'password'}
+              className="form-input"
+              placeholder={t('login.passwordPlaceholder')}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              minLength={6}
+            />
+          </div>
 
-        <hr style={{ margin: '24px 0', border: 'none', borderTop: '1px solid var(--c-border)' }} />
+          {mode === 'register' && (
+            <div className="form-group" style={{ marginBottom: '18px' }}>
+              <label htmlFor="confirmPassword" className="form-label">
+                {t('login.confirmPasswordLabel')} <span style={{ color: 'var(--c-error-border)' }}>*</span>
+              </label>
+              <input
+                id="confirmPassword"
+                type={showPassword ? 'text' : 'password'}
+                className="form-input"
+                placeholder={t('login.confirmPasswordPlaceholder')}
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                required
+                minLength={6}
+              />
+            </div>
+          )}
 
+          <button
+            type="submit"
+            className="btn"
+            disabled={isSubmitting}
+            style={{ width: '100%', marginTop: '6px', fontSize: '1rem', fontWeight: 600 }}
+          >
+            {isSubmitting
+              ? 'Processing...'
+              : mode === 'register'
+              ? t('login.signUpButton')
+              : t('login.signInButton')}
+          </button>
+        </form>
+
+        {/* Toggle between modes */}
+        <div className="center" style={{ padding: '14px 0 0' }}>
+          <p className="muted" style={{ fontSize: '0.88rem', margin: 0 }}>
+            {mode === 'login' ? (
+              <>
+                {t('login.noAccountText')}{' '}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMode('register');
+                    setError('');
+                    setSuccessMsg('');
+                  }}
+                  style={{
+                    border: 'none',
+                    background: 'transparent',
+                    color: 'var(--c-primary)',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    padding: 0
+                  }}
+                >
+                  Create an account
+                </button>
+              </>
+            ) : (
+              <>
+                {t('login.hasAccountText')}{' '}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMode('login');
+                    setError('');
+                    setSuccessMsg('');
+                  }}
+                  style={{
+                    border: 'none',
+                    background: 'transparent',
+                    color: 'var(--c-primary)',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    padding: 0
+                  }}
+                >
+                  Sign in here
+                </button>
+              </>
+            )}
+          </p>
+        </div>
+
+        {/* Divider */}
+        <div style={{ position: 'relative', margin: '24px 0 16px', textAlign: 'center' }}>
+          <hr style={{ border: 'none', borderTop: '1px solid var(--c-border)' }} />
+          <span
+            style={{
+              position: 'absolute',
+              top: '-10px',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              background: 'var(--c-card)',
+              padding: '0 12px',
+              color: 'var(--c-muted)',
+              fontSize: '0.78rem',
+              textTransform: 'uppercase',
+              letterSpacing: '0.5px'
+            }}
+          >
+            {t('login.orDivider')}
+          </span>
+        </div>
+
+        {/* Quick Demo Section for Professors/Evaluators */}
         <div>
-          <h3 style={{ fontSize: '1rem', marginBottom: '8px' }}>{t('login.quickDemo')}</h3>
-          <p className="muted" style={{ fontSize: '0.85rem', marginBottom: '12px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '8px' }}>
+            <h3 style={{ fontSize: '0.98rem', margin: 0 }}>{t('login.quickDemo')}</h3>
+            <span style={{ fontSize: '0.75rem', color: 'var(--c-muted)' }}>
+              Password: <code>password123</code>
+            </span>
+          </div>
+          <p className="muted" style={{ fontSize: '0.82rem', marginBottom: '12px' }}>
             {t('login.demoHint')}
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -167,24 +354,42 @@ export default function Login() {
                 key={p.profile_id}
                 type="button"
                 className="btn btn--ghost"
-                style={{ textAlign: 'left', justifyContent: 'flex-start', padding: '10px 14px' }}
+                style={{
+                  textAlign: 'left',
+                  justifyContent: 'space-between',
+                  padding: '10px 14px',
+                  borderRadius: '10px',
+                  background: '#f8fafc',
+                  border: '1px solid var(--c-border)'
+                }}
                 onClick={() => handleDemoLogin(p)}
               >
                 <div>
-                  <strong>{p.name}</strong> ({p.occupation}, {p.state})
+                  <div style={{ fontWeight: 600, color: 'var(--c-text)' }}>
+                    {p.name}{' '}
+                    <span style={{ fontWeight: 400, color: 'var(--c-muted)', fontSize: '0.82rem' }}>
+                      ({p.occupation}, {p.state})
+                    </span>
+                  </div>
                   <span className="muted" style={{ display: 'block', fontSize: '0.78rem' }}>
-                    Category: {p.category} • Income: ₹{p.income.toLocaleString('en-IN')}
+                    📧 {p.email} • Category: {p.category}
                   </span>
                 </div>
+                <span style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--c-primary)' }}>
+                  Sign In →
+                </span>
               </button>
             ))}
           </div>
         </div>
 
-        <div className="center" style={{ padding: '16px 0 0' }}>
-          <p className="muted" style={{ fontSize: '0.85rem' }}>
+        {/* Guest link */}
+        <div className="center" style={{ padding: '18px 0 0' }}>
+          <p className="muted" style={{ fontSize: '0.85rem', margin: 0 }}>
             Looking to browse schemes without logging in?{' '}
-            <Link to="/schemes">Browse Scheme Explorer</Link>
+            <Link to="/schemes" style={{ fontWeight: 600 }}>
+              Browse Scheme Explorer
+            </Link>
           </p>
         </div>
       </div>
