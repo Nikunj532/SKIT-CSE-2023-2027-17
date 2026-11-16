@@ -16,3 +16,16 @@ def root():
         "project": "Adhikar Setu",
         "status": "running"
     }
+
+
+# ---- Sprint 2: Core Backend APIs (Profile + Scheme metadata) ----
+from backend.app.api.profile_routes import router as profile_router
+from backend.app.api.sprint2_scheme_routes import router as sprint2_scheme_router
+
+app.include_router(profile_router)
+app.include_router(sprint2_scheme_router)
+
+
+@app.get("/api/v2/health", tags=["Health"])
+def sprint2_health():
+    return {"status": "ok"}
