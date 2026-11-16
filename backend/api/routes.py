@@ -8,11 +8,13 @@ from backend.services.scheme_service import (
     search_schemes,
 )
 from Nimisha.api.profile_routes import router as profile_router
+from Nimisha.api.recommendation_routes import router as recommendation_router
 
 router = APIRouter()
 
-# Register citizen profile routes
+# Register Citizen Profile and Recommendation routers
 router.include_router(profile_router)
+router.include_router(recommendation_router)
 
 
 @router.get(
