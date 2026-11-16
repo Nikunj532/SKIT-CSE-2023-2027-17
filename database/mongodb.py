@@ -94,3 +94,5 @@ def init_profiles_indexes(db) -> bool:
     except Exception as e:
         logger.warning("Failed to initialize profile indexes: %s", e)
         return False
+
+

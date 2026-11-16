@@ -117,20 +117,35 @@ To ensure optimal query performance and business constraint enforcement, the fol
 
 ---
 
-## 3. Persistence Architecture & Environment Configuration
+## 3. Personalized Scheme Recommendation & Eligibility Engine
+
+The recommendation engine matches citizen profiles against government welfare schemes across five weighted dimensions:
+
+1. **Geographic Scope (25 pts)**: Validates state jurisdiction (matches resident state or Central/All India schemes).
+2. **Income Ceiling Verification (25 pts)**: Evaluates annual household income against parsed scheme income caps (e.g. ₹2.5 Lakhs for Devnarayan/Post-Matric, ₹1.5 Lakhs for OBC scholarships).
+3. **Occupation & Domain Alignment (30 pts)**: Matches student, farmer, artisan, and worker demographics against scheme objectives.
+4. **Social Category & Affirmatives (20 pts)**: Validates SC, ST, OBC, SBC, and General inclusion criteria.
+5. **Disability & Special Assistance**: Grants targeted matching boosts for Divyangjan welfare programs.
+
+Determinations are categorized into `Eligible` ($\ge 70\%$), `Conditionally Eligible` ($40\% - 69\%$), or `Ineligible` ($< 40\%$ or hard disqualification), returning verified criteria and missing requirements for citizen transparency.
+
+---
+
+## 4. Persistence Architecture & Environment Configuration
 
 The backend persistence layer implements a dual-tier strategy:
 
 1. **MongoDB Primary Storage:**
    - Active when MongoDB server is reachable via connection string configured in `MONGODB_URI` (default: `mongodb://localhost:27017`).
    - Database name configured via `MONGODB_DB_NAME` (default: `adhikar_setu`).
+   - Collections: `profiles`.
    - All connection credentials remain strictly in environment variables (`.env`).
 2. **Local Fallback Storage:**
-   - When MongoDB is unavailable or during standalone offline testing, `ProfileService` transparently persists to local file storage (`data/profiles.json`).
-   - Ensures continuous developer workflow and test suite execution without external service hard-dependencies.
+   - When MongoDB is unavailable or during standalone offline testing, `ProfileService` transparently persists to local JSON storage (`data/profiles.json`).
+   - Ensures continuous developer workflow, offline development, and test suite execution without external service hard-dependencies.
 
 ---
 
-## 4. Integrity and Government Verification Notice
+## 5. Integrity and Government Verification Notice
 
 Only verified government-source information is presented to citizens as official scheme information. Official portal links (`official_url`) are maintained for all schemes.

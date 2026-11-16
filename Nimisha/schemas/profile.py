@@ -49,9 +49,9 @@ class ProfileInDB(ProfileBase):
     created_at: str = Field(..., description="Creation timestamp in ISO format")
     updated_at: str = Field(..., description="Last update timestamp in ISO format")
 
-    class Config:
-        populate_by_name = True
-        json_schema_extra = {
+    model_config = {
+        "populate_by_name": True,
+        "json_schema_extra": {
             "example": {
                 "_id": "670678e5f1a23b4c5d6e7f80",
                 "profile_id": "prof_a1b2c3d4",
@@ -69,6 +69,7 @@ class ProfileInDB(ProfileBase):
                 "updated_at": "2026-10-09T18:00:00Z"
             }
         }
+    }
 
 
 # MongoDB collection name
