@@ -95,3 +95,25 @@ Once the server is running, you can access:
 * **Health Check**: [http://127.0.0.1:8000/api/v1/health](http://127.0.0.1:8000/api/v1/health)
 * **Interactive API Docs (Swagger UI)**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 * **ReDoc Documentation**: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+
+---
+
+## 📡 API Endpoints Overview
+
+### 1. Citizen Profile Management (`/api/profile`)
+* `POST /api/profile`: Create a new citizen profile (demographics, income, location, category).
+* `GET /api/profile/{profile_id}`: Retrieve a citizen profile by its unique ID.
+* `PUT /api/profile/{profile_id}`: Update specific fields of an existing citizen profile.
+* `GET /api/profile`: List stored citizen profiles with pagination (`skip`, `limit`).
+
+### 2. Scheme Search & Discovery (`/api/schemes`)
+* `GET /api/schemes/search`: Search and filter government schemes by keyword (`q`), category (`category`), and state (`state`), with pagination (`page`, `limit`).
+* `GET /api/schemes/{scheme_id}`: Retrieve comprehensive details of a scheme by ID.
+* `GET /api/schemes`: Retrieve all schemes (backward compatibility).
+
+### 3. Personalized Recommendations & Eligibility (`/api`)
+* `GET /api/profile/{profile_id}/recommendations`: Get personalized, ranked scheme recommendations based on citizen eligibility criteria (`min_score`, `category`, `limit`).
+* `POST /api/recommendations`: Calculate personalized recommendations for an ad-hoc profile payload (guest discovery without prior database registration).
+* `POST /api/schemes/{scheme_id}/check-eligibility`: Perform detailed eligibility audit for a specific scheme against a citizen profile.
+
+
