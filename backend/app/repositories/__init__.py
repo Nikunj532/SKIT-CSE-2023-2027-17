@@ -1,4 +1,10 @@
 """Data Access Repositories Package."""
-from app.repositories.scheme_repository import SchemeRepository
+try:
+    from backend.app.repositories.scheme_repository import SchemeRepository
+except ModuleNotFoundError:
+    try:
+        from app.repositories.scheme_repository import SchemeRepository
+    except ModuleNotFoundError:
+        SchemeRepository = None
 
 __all__ = ["SchemeRepository"]
